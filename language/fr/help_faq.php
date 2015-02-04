@@ -52,7 +52,7 @@ $help = array(
 	),
 	array(
 		0 => 'J’ai perdu mon mot de passe !',
-		1 => 'Pas de panique ! Bien que votre mot de passe ne puisse pas être récupéré, il peut facilement être réinitialisé. Rendez-vous sur la page de connexion et cliquez sur <em>J’ai perdu mon mot de passe</em>. Suivez les instructions et vous devriez être en mesure de pouvoir vous connecter de nouveau rapidement.<br />Cependant, si vous ne pouvez pas réinitialiser votre mot de passe, nous vous invitons à contacter un administrateur du forum.',
+		1 => 'Pas de panique ! Bien que votre mot de passe ne puisse pas être récupéré, il peut facilement être réinitialisé. Rendez-vous sur la page de connexion et cliquez sur <em>J’ai perdu mon mot de passe</em>. Suivez les instructions et vous devriez être en mesure de pouvoir vous connecter de nouveau rapidement.',
 	),
 	array(
 		0 => 'Je suis inscrit mais ne peux pas me connecter !',
@@ -92,7 +92,7 @@ $help = array(
 	),
 	array(
 		0 => 'Ma langue n’apparaît pas dans la liste !',
-		1 => 'Soit l’administrateur n’a pas installé votre langue sur le forum, soit le logiciel n’a pas encore été traduit dans votre langue. Essayez de demander à un administrateur du forum s’il est possible qu’il puisse installer la traduction que vous souhaitez. Si la traduction désirée n’existe pas, vous êtes libre de vous porter volontaire et commencer une nouvelle traduction. Pour plus d’informations, veuillez vous rendre sur le site internet de <a href="https://www.phpbb.com/">phpBB</a>&reg; (en anglais).',
+		1 => 'Soit l’administrateur n’a pas installé votre langue sur le forum, soit le logiciel n’a pas encore été traduit dans votre langue. Essayez de demander à un administrateur du forum s’il est possible qu’il puisse installer la traduction que vous souhaitez. Si la traduction désirée n’existe pas, vous êtes libre de vous porter volontaire et commencer une nouvelle traduction. Pour plus d’informations, veuillez vous rendre sur le site internet de phpBB (le lien est disponible en bas de chaque page du forum).',
 	),
 	array(
 		0 => 'Que signifient les images situées à côté de mon nom d’utilisateur ?',
@@ -329,7 +329,7 @@ $help = array(
 	),
 	array(
 		0 => 'Qui a développé ce logiciel de forum de discussions ?',
-		1 => 'Ce programme (dans sa forme non modifiée) est produit et distribué par <a href="https://www.phpbb.com/">phpBB Limited</a>, qui en est le légitime propriétaire. Il est rendu accessible sous la Licence Publique Générale GNU version 2 (GPL-2.0) et peut être distribué gratuitement. Pour plus d’informations, veuillez consulter la rubrique <a href="https://www.phpbb.com/about/">À propos de phpBB</a> du site officiel (en anglais).',
+		1 => 'Ce programme (dans sa forme non modifiée) est produit et distribué par <a href="https://www.phpbb.com/">phpBB Limited</a>, qui en est le légitime propriétaire. Il est rendu accessible sous la Licence Publique Générale GNU version 2 (GPL-2.0) et peut être distribué gratuitement. Pour plus d’informations, veuillez consulter le lien.',
 	),
 	array(
 		0 => 'Pourquoi la fonctionnalité X n’est pas disponible ?',
