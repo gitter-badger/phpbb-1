@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* mcp [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -56,10 +53,6 @@ $lang = array_merge($lang, array(
 	'APPROVE_POST_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir approuver ce message ?',
 	'APPROVE_POSTS'			=> 'Approuver les messages',
 	'APPROVE_POSTS_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir approuver les messages que vous avez sélectionnés ?',
-	'APPROVE_TOPIC'			=> 'Approuver le sujet',
-	'APPROVE_TOPIC_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir approuver ce sujet ?',
-	'APPROVE_TOPICS'		=> 'Approuver les sujets',
-	'APPROVE_TOPICS_CONFIRM'=> 'Êtes-vous sûr(e) de vouloir approuver les sujets que vous avez sélectionnés ?',
 
 	'CANNOT_MOVE_SAME_FORUM'=> 'Vous ne pouvez pas déplacer ce sujet dans ce forum car il y est déjà présent.',
 	'CANNOT_WARN_ANONYMOUS'	=> 'Vous ne pouvez pas distribuer d’avertissements aux visiteurs.',
@@ -80,12 +73,16 @@ $lang = array_merge($lang, array(
 	'DELETE_PM_REPORTS'			=> 'Supprimer les rapports de MP',
 	'DELETE_PM_REPORTS_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer les rapports de MP que vous avez sélectionnés ?',
 	'DELETE_POSTS'				=> 'Supprimer les messages',
+	'DELETE_POSTS_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ces messages ?',
+	'DELETE_POST_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ce message ?',
 	'DELETE_REPORT'				=> 'Supprimer le rapport',
 	'DELETE_REPORT_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer le rapport que vous avez sélectionné ?',
 	'DELETE_REPORTS'			=> 'Supprimer les rapports',
 	'DELETE_REPORTS_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer les rapports que vous avez sélectionnés ?',
 	'DELETE_SHADOW_TOPIC'		=> 'Supprimer la redirection du sujet',
 	'DELETE_TOPICS'				=> 'Supprimer les sujets sélectionnés',
+	'DELETE_TOPICS_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ces sujets ?',
+	'DELETE_TOPIC_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ce sujet ?',
 	'DISAPPROVE'				=> 'Désapprouver',
 	'DISAPPROVE_REASON'			=> 'Raison de la désapprobation',
 	'DISAPPROVE_POST'			=> 'Désapprouver le message',
@@ -123,10 +120,8 @@ $lang = array_merge($lang, array(
 	'LATEST_WARNING_TIME'		=> 'Le dernier avertissement publié',
 	'LATEST_WARNINGS'			=> 'Les 5 derniers avertissements',
 	'LEAVE_SHADOW'				=> 'Conserver sur place une redirection du sujet',
-	'LIST_REPORTS'				=> array(
-		1	=> '%d rapport',
-		2	=> '%d rapports',
-	),
+	'LIST_REPORT'				=> '1 rapport',
+	'LIST_REPORTS'				=> '%d rapports',
 	'LOCK'						=> 'Verrouiller',
 	'LOCK_POST_POST'			=> 'Verrouiller le message',
 	'LOCK_POST_POST_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir empêcher l’édition de ce message ?',
@@ -205,10 +200,6 @@ $lang = array_merge($lang, array(
 	'MCP_QUEUE_UNAPPROVED_POSTS_EXPLAIN'	=> 'Cette page vous affiche la liste de tous les messages qui nécessitent d’être approuvés afin qu’ils soient visibles aux utilisateurs.',
 	'MCP_QUEUE_UNAPPROVED_TOPICS'			=> 'Sujets en attente d’approbation',
 	'MCP_QUEUE_UNAPPROVED_TOPICS_EXPLAIN'	=> 'Cette page vous affiche la liste de tous les sujets qui nécessitent d’être approuvés afin qu’ils soient visibles aux utilisateurs.',
-	'MCP_QUEUE_DELETED_POSTS'				=> 'Messages supprimés',
-	'MCP_QUEUE_DELETED_POSTS_EXPLAIN'		=> 'Cette page vous affiche la liste de tous les messages supprimés. Vous pouvez restaurer ou supprimer définitivement les messages à partir de cette page.',
-	'MCP_QUEUE_DELETED_TOPICS'				=> 'Sujets supprimés',
-	'MCP_QUEUE_DELETED_TOPICS_EXPLAIN'		=> 'Cette page vous affiche la liste de tous les sujets supprimés. Vous pouvez restaurer ou supprimer définitivement les sujets à partir de cette page.',
 
 	'MCP_VIEW_USER'			=> 'Consulter les avertissements d’un utilisateur spécifique',
 
@@ -246,32 +237,25 @@ $lang = array_merge($lang, array(
 	'NO_POST'						=> 'Vous devez sélectionner un message avant d’avertir un utilisateur concernant un de ses messages.',
 	'NO_POST_REPORT'				=> 'Le message n’a pas été rapporté.',
 	'NO_POST_SELECTED'				=> 'Vous devez sélectionner au moins un message afin d’effectuer cette opération.',
-	'NO_POSTS_DELETED'				=> 'Aucun message n’a été supprimé.',
-	'NO_POSTS_QUEUE'				=> 'Aucun message n’est en attente d’approbation.',
 	'NO_REASON_DISAPPROVAL'			=> 'Veuillez saisir la raison de la désapprobation.',
 	'NO_REPORT'						=> 'Aucun rapport.',
 	'NO_REPORTS'					=> 'Aucun rapport.',
 	'NO_REPORT_SELECTED'			=> 'Vous devez sélectionner au moins un rapport afin d’effectuer cette opération.',
 	'NO_TOPIC_ICON'					=> 'Aucune',
 	'NO_TOPIC_SELECTED'				=> 'Vous devez sélectionner au moins un sujet afin d’effectuer cette opération.',
-	'NO_TOPICS_DELETED'				=> 'Aucun sujet n’a été supprimé.',
 	'NO_TOPICS_QUEUE'				=> 'Aucun sujet n’est en attente d’approbation.',
 
 	'ONLY_TOPIC'			=> 'Le sujet « %s » uniquement',
 	'OTHER_USERS'			=> 'Autres utilisateurs ayant publiés avec cette adresse IP',
 
-	'QUICKMOD_ACTION_NOT_ALLOWED' => "%s n’est pas autorisé comme QuickMod",
-
 	'PM_REPORT_CLOSED_SUCCESS'	=> 'Le rapport de MP que vous avez sélectionné a été clôturé.',
 	'PM_REPORT_DELETED_SUCCESS'	=> 'Le rapport de MP que vous avez sélectionné a été supprimé.',
 	'PM_REPORTED_SUCCESS'		=> 'Le message privé a été rapporté.',
+	'PM_REPORT_TOTAL'			=> 'Au total, il y a <strong>1</strong> rapport de MP à traiter.',
 	'PM_REPORTS_CLOSED_SUCCESS'	=> 'Les rapports de MP que vous avez sélectionnés ont été clôturés.',
 	'PM_REPORTS_DELETED_SUCCESS'=> 'Les rapport de MP que vous avez sélectionnés ont été supprimés.',
-	'PM_REPORTS_TOTAL'			=> array(
-		0	=> 'Aucun rapport de MP.',
-		1	=> 'Au total, il y a <strong>1</strong> rapport de MP à traiter.',
-		2	=> 'Au total, il y a <strong>%d</strong> rapports de MP à traiter.',
-	),
+	'PM_REPORTS_TOTAL'			=> 'Au total, il y a <strong>%d</strong> rapports de MP à traiter.',
+	'PM_REPORTS_ZERO_TOTAL'		=> 'Aucun rapport de MP.',
 	'PM_REPORT_DETAILS'			=> 'Informations sur le rapport de message privé',
 	'POSTER'					=> 'Auteur',
 	'POSTS_APPROVED_SUCCESS'	=> 'Les messages que vous avez sélectionnés ont été approuvés.',
@@ -279,17 +263,15 @@ $lang = array_merge($lang, array(
 	'POSTS_DISAPPROVED_SUCCESS'	=> 'Les messages que vous avez sélectionnés ont été désapprouvés.',
 	'POSTS_LOCKED_SUCCESS'		=> 'Les messages que vous avez sélectionnés ont été verrouillés.',
 	'POSTS_MERGED_SUCCESS'		=> 'Les messages que vous avez sélectionnés ont été fusionnés.',
+	'POSTS_UNLOCKED_SUCCESS'	=> 'Les messages que vous avez sélectionnés ont été déverrouillés.',
 	'POSTS_PER_PAGE'			=> 'Messages par page',
 	'POSTS_PER_PAGE_EXPLAIN'	=> 'Réglez cette valeur sur 0 afin de consulter tous les messages.',
-	'POSTS_RESTORED_SUCCESS'	=> 'Les messages que vous avez sélectionnés ont été restaurés.',
-	'POSTS_UNLOCKED_SUCCESS'	=> 'Les messages que vous avez sélectionnés ont été déverrouillés.',
 	'POST_APPROVED_SUCCESS'		=> 'Le message que vous avez sélectionné a été approuvé.',
 	'POST_DELETED_SUCCESS'		=> 'Le message que vous avez sélectionné a été supprimé de la base de données.',
 	'POST_DISAPPROVED_SUCCESS'	=> 'Le message que vous avez sélectionné a été désapprouvé.',
 	'POST_LOCKED_SUCCESS'		=> 'Le message a été verrouillé.',
 	'POST_NOT_EXIST'			=> 'Le message que vous souhaitez consulter n’existe pas.',
 	'POST_REPORTED_SUCCESS'		=> 'Le message a été rapporté.',
-	'POST_RESTORED_SUCCESS'		=> 'Le message a été restauré.',
 	'POST_UNLOCKED_SUCCESS'		=> 'Le message a été déverrouillé.',
 
 	'READ_USERNOTES'			=> 'Remarques sur l’utilisateur',
@@ -300,13 +282,10 @@ $lang = array_merge($lang, array(
 	'REPORTED_ON_DATE'			=> 'le',
 	'REPORTS_CLOSED_SUCCESS'	=> 'Les rapports que vous avez sélectionnés ont été clôturés.',
 	'REPORTS_DELETED_SUCCESS'	=> 'Les rapports que vous avez sélectionnés ont été supprimés.',
-	'REPORTS_TOTAL'				=> array(
-		0	=> 'Aucun rapport.',
-		1	=> 'Au total, il y a <strong>1</strong> rapport à traiter.',
-		2	=> 'Au total, il y a <strong>%d</strong> rapports à traiter.',
-	),
-	'REPORT_CLOSED'				=> 'Ce rapport a déjà été clôturé.',
-	'REPORT_CLOSED_SUCCESS'		=> 'Le rapport que vous avez sélectionné a été clôturé.',
+	'REPORTS_TOTAL'				=> 'Au total, il y a <strong>%d</strong> rapports à traiter.',
+	'REPORTS_ZERO_TOTAL'		=> 'Aucun rapport.',
+	'REPORT_CLOSED'				=> 'Ce rapport a déjà été fermé.',
+	'REPORT_CLOSED_SUCCESS'		=> 'Le rapport que vous avez sélectionné a été fermé.',
 	'REPORT_DELETED_SUCCESS'	=> 'Le rapport que vous avez sélectionné a été supprimé.',
 	'REPORT_DETAILS'			=> 'Informations sur le rapport',
 	'REPORT_MESSAGE'			=> 'Rapporter le message',
@@ -316,15 +295,7 @@ $lang = array_merge($lang, array(
 	'REPORT_POST_EXPLAIN'		=> 'Utilisez ce formulaire afin de rapporter le message que vous avez sélectionné aux modérateurs et aux administrateurs du forum. Seuls les messages ne respectant pas les règles du forum devraient être rapportés.',
 	'REPORT_REASON'				=> 'Raison du rapport',
 	'REPORT_TIME'				=> 'Date du rapport',
-	'RESTORE'					=> 'Restaurer',
-	'RESTORE_POST'				=> 'Restaurer le message',
-	'RESTORE_POST_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir restaurer ce message ?',
-	'RESTORE_POSTS'				=> 'Restaurer les messages',
-	'RESTORE_POSTS_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir restaurer les messages que vous avez sélectionnés ?',
-	'RESTORE_TOPIC'				=> 'Restaurer le sujet',
-	'RESTORE_TOPIC_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir restaurer ce sujet ?',
-	'RESTORE_TOPICS'			=> 'Restaurer les sujets',
-	'RESTORE_TOPICS_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir restaurer les sujets que vous avez sélectionnés ?',
+	'REPORT_TOTAL'				=> 'Au total, il y a <strong>1</strong> rapport à traiter.',
 	'RESYNC'					=> 'Resynchroniser',
 	'RETURN_MESSAGE'			=> '%sRevenir au message%s',
 	'RETURN_NEW_FORUM'			=> '%sAller sur le nouveau forum%s',
@@ -365,7 +336,6 @@ $lang = array_merge($lang, array(
 	'TOPICS_FORKED_SUCCESS'		=> 'Les sujets que vous avez sélectionnés ont été copiés.',
 	'TOPICS_LOCKED_SUCCESS'		=> 'Les sujets que vous avez sélectionnés ont été verrouillés.',
 	'TOPICS_MOVED_SUCCESS'		=> 'Les sujets que vous avez sélectionnés ont été déplacés.',
-	'TOPICS_RESTORED_SUCCESS'	=> 'Les sujets que vous avez sélectionnés ont été restaurés.',
 	'TOPICS_RESYNC_SUCCESS'		=> 'Les sujets que vous avez sélectionnés ont été resynchronisés.',
 	'TOPICS_TYPE_CHANGED'		=> 'Les types de sujet ont été modifiés.',
 	'TOPICS_UNLOCKED_SUCCESS'	=> 'Les sujets que vous avez sélectionnés ont été déverrouillés.',
@@ -376,7 +346,6 @@ $lang = array_merge($lang, array(
 	'TOPIC_LOCKED_SUCCESS'		=> 'Le sujet que vous avez sélectionné a été verrouillé.',
 	'TOPIC_MOVED_SUCCESS'		=> 'Le sujet que vous avez sélectionné a été déplacé.',
 	'TOPIC_NOT_EXIST'			=> 'Le sujet que vous souhaitez consulter n’existe pas.',
-	'TOPIC_RESTORED_SUCCESS'	=> 'Le sujet que vous avez sélectionné a été restauré.',
 	'TOPIC_RESYNC_SUCCESS'		=> 'Le sujet que vous avez sélectionné a été resynchronisé.',
 	'TOPIC_SPLIT_SUCCESS'		=> 'Le sujet que vous avez sélectionné a été divisé.',
 	'TOPIC_TIME'				=> 'Heure du sujet',
@@ -384,11 +353,9 @@ $lang = array_merge($lang, array(
 	'TOPIC_UNLOCKED_SUCCESS'	=> 'Le sujet que vous avez sélectionné a été déverrouillé.',
 	'TOTAL_WARNINGS'			=> 'Nombre total d’avertissements',
 
-	'UNAPPROVED_POSTS_TOTAL'		=> array(
-		0	=> 'Aucun message n’est en attente d’approbation.',
-		1	=> 'Au total, il y a <strong>1</strong> message en attente d’approbation.',
-		2	=> 'Au total, il y a <strong>%d</strong> messages en attente d’approbation.',
-	),
+	'UNAPPROVED_POSTS_TOTAL'		=> 'Au total, il y a <strong>%d</strong> messages en attente d’approbation.',
+	'UNAPPROVED_POSTS_ZERO_TOTAL'	=> 'Aucun message n’est en attente d’approbation.',
+	'UNAPPROVED_POST_TOTAL'			=> 'Au total, il y a <strong>1</strong> message en attente d’approbation.',
 	'UNLOCK'						=> 'Déverrouiller',
 	'UNLOCK_POST'					=> 'Déverrouiller le message',
 	'UNLOCK_POST_EXPLAIN'			=> 'Autoriser l’édition',
@@ -414,7 +381,7 @@ $lang = array_merge($lang, array(
 	'WARNING_PM_BODY'		=> 'Ceci est un avertissement prononcé à votre encontre par un administrateur ou un modérateur de ce forum.[quote]%s[/quote]',
 	'WARNING_PM_SUBJECT'	=> 'Avertissement',
 	'WARNING_POST_DEFAULT'	=> 'Ceci est un avertissement concernant votre message suivant : %s .',
-	'NO_WARNINGS'	=> 'Aucun avertissement.',
+	'WARNINGS_ZERO_TOTAL'	=> 'Aucun avertissement.',
 
 	'YOU_SELECTED_TOPIC'	=> 'Vous avez sélectionné le sujet numéro %d : %s.',
 
@@ -433,3 +400,5 @@ $lang = array_merge($lang, array(
 		),
 	),
 ));
+
+?>

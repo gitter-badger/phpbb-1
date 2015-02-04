@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_board [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -41,29 +38,18 @@ if (empty($lang) || !is_array($lang))
 // Board Settings
 $lang = array_merge($lang, array(
 	'ACP_BOARD_SETTINGS_EXPLAIN'	=> 'Vous pouvez effectuer sur cette page les opérations basiques de votre forum, comme lui attribuer un nom et une description, régler son fuseau horaire ou encore définir sa langue par défaut.',
-	'BOARD_INDEX_TEXT'				=> 'Texte de l’index du forum',
-	'BOARD_INDEX_TEXT_EXPLAIN'		=> 'Ce texte sera affiché comme accueil du forum dans le chemin de navigation du forum. Si aucun texte n’est spécifié, « Accueil du forum » sera affiché par défaut.',
-	'BOARD_STYLE'					=> 'Style du forum',
 	'CUSTOM_DATEFORMAT'				=> 'Personnaliser…',
 	'DEFAULT_DATE_FORMAT'			=> 'Format de date',
 	'DEFAULT_DATE_FORMAT_EXPLAIN'	=> 'Le format de date est similaire à celui qui est utilisé par la fonction PHP <code>date</code>.',
 	'DEFAULT_LANGUAGE'				=> 'Langue par défaut',
 	'DEFAULT_STYLE'					=> 'Style par défaut',
-	'DEFAULT_STYLE_EXPLAIN'			=> 'Le style par défaut pour les nouveaux utilisateurs.',
 	'DISABLE_BOARD'					=> 'Désactiver le forum',
 	'DISABLE_BOARD_EXPLAIN'			=> 'Le forum sera indisponible aux utilisateurs qui ne sont ni administrateurs, ni modérateurs. Si vous le souhaitez, vous pouvez également fournir une brève explication (de 255 caractères au maximum) qui sera affichée aux utilisateurs.',
-	'DISPLAY_LAST_SUBJECT'			=> 'Afficher le sujet du dernier message publié dans la liste du forum',
-	'DISPLAY_LAST_SUBJECT_EXPLAIN'	=> 'Le sujet du dernier message qui a été publié dans un forum sera affiché dans la liste de ce dernier sous forme de lien redirigeant vers le message. Les sujets des forums qui sont protégés par un mot de passe et des forums qui sont en lecture seule ne sont pas affichés.',
-	'GUEST_STYLE'					=> 'Styles des invités',
-	'GUEST_STYLE_EXPLAIN'			=> 'Le style du forum pour les invités.',
 	'OVERRIDE_STYLE'				=> 'Écraser le style des utilisateurs',
 	'OVERRIDE_STYLE_EXPLAIN'		=> 'Le style des utilisateurs (et des invités) sera remplacé par celui qui a été sélectionné sous « Style par défaut ».',
 	'SITE_DESC'						=> 'Description du forum',
-	'SITE_HOME_TEXT'				=> 'Texte du lien vers le site internet principal',
-	'SITE_HOME_TEXT_EXPLAIN'		=> 'Ce texte sera affiché sous forme de lien redirigeant vers votre site internet et sera inséré dans les liens de navigation de votre forum. Si aucun texte n’est spécifié, « Page d’accueil » sera affiché par défaut.',
-	'SITE_HOME_URL'					=> 'Lien vers le site internet principal',
-	'SITE_HOME_URL_EXPLAIN'			=> 'Si vous en saisissez un, ce lien sera placé dans les liens de navigation de votre forum et remplacera par la destination souhaitée le lien présent sur le logo du forum, redirigeant par défaut les utilisateurs sur l’index de votre forum. Veuillez saisir un lien absolu, tel que <samp>https://www.phpbb.com</samp>.',
 	'SITE_NAME'						=> 'Nom du forum',
+	'SYSTEM_DST'					=> 'Activer l’heure d’été',
 	'SYSTEM_TIMEZONE'				=> 'Fuseau horaire des invités',
 	'SYSTEM_TIMEZONE_EXPLAIN'			=> 'Ce fuseau horaire ne concerne que les utilisateurs qui ne sont pas connectés, tels que les invités et les robots. Les utilisateurs connectés peuvent régler leur fuseau horaire lors de leur inscription ou depuis le panneau de contrôle de l’utilisateur.',
 	'WARNINGS_EXPIRE'				=> 'Durée des avertissements',
@@ -109,7 +95,6 @@ $lang = array_merge($lang, array(
 
 	'ALLOW_AVATARS'					=> 'Activer les avatars',
 	'ALLOW_AVATARS_EXPLAIN'			=> 'Les utilisateurs pourront afficher un avatar. Si vous désactivez les avatars, ces derniers ne seront plus affichés sur le forum mais les utilisateurs pourront toujours télécharger leur avatar depuis le panneau de contrôle de l’utilisateur.',
-	'ALLOW_GRAVATAR'				=> 'Autoriser l’utilisation d’images de Gravatar',
 	'ALLOW_LOCAL'					=> 'Autoriser l’utilisation d’images de la galerie d’avatars',
 	'ALLOW_REMOTE'					=> 'Autoriser l’utilisation d’images distantes',
 	'ALLOW_REMOTE_EXPLAIN'			=> 'Les avatars situés sur un site internet externe.',
@@ -224,7 +209,6 @@ $lang = array_merge($lang, array(
 
 	'ACC_ACTIVATION'				=> 'Méthode d’activation des comptes',
 	'ACC_ACTIVATION_EXPLAIN'		=> 'Détermine quels sont les utilisateurs qui bénéficieront d’un accès immédiat au forum ou si une confirmation leur sera demandée. Vous pouvez également désactiver entièrement les nouvelles inscriptions. <em>« L’envoi de courriers électroniques depuis le forum » doit être activé afin d’être en mesure de pouvoir utiliser l’activation par un administrateur ou par l’utilisateur lui-même.</em>',
-	'ACC_ACTIVATION_WARNING'		=> 'Veuillez noter que la méthode d’activation actuellement sélectionnée nécessite l’activation des courriers électroniques, sinon l’inscription sera désactivée. Nous vous recommandons de soit activer les courriers électroniques, soit de sélectionner une autre méthode d’activation.',
 	'NEW_MEMBER_POST_LIMIT'			=> 'Limite de messages des nouveaux membres',
 	'NEW_MEMBER_POST_LIMIT_EXPLAIN'	=> 'Les nouveaux membres seront membres du groupe des <em>Utilisateurs inscrits récemment</em> jusqu’à ce qu’ils atteignent ce nombre de messages. Vous pouvez utiliser ce groupe afin d’empêcher ses membres à utiliser les fonctionnalités de la messagerie privée ou de contrôler leurs messages. <strong>Réglez cette valeur sur 0 afin de désactiver cette fonctionnalité.</strong>',
 	'NEW_MEMBER_GROUP_DEFAULT'		=> 'Instaurer le groupe des utilisateurs inscrits récemment en tant que groupe par défaut',
@@ -242,7 +226,7 @@ $lang = array_merge($lang, array(
 	'COPPA_MAIL'				=> 'Adresse de courrier électronique de la COPPA',
 	'COPPA_MAIL_EXPLAIN'		=> 'L’adresse de courrier électronique qui recevra les formulaires d’inscription de la COPPA que les parents devront envoyer.',
 	'ENABLE_COPPA'				=> 'Activer la COPPA',
-	'ENABLE_COPPA_EXPLAIN'		=> 'Les utilisateurs devront déclarer qu’ils ont 13 ans ou plus afin de se conformer à la COPPA, loi des États-Unis d’Amérique visant à protéger la vie privée des enfants sur Internet. Si cette option est désactivée, les groupes d’utilisateurs liés à la COPPA ne seront pas affichés.',
+	'ENABLE_COPPA_EXPLAIN'		=> 'Les utilisateurs devront déclarer qu’ils ont 13 ans ou plus afin de se conformer à la <em><strong>C</strong>hildren’s <strong>O</strong>nline <strong>P</strong>rivacy <strong>P</strong>rotection <strong>A</strong>ct</em>, loi des États-Unis d’Amérique visant à protéger la vie privée des enfants sur Internet. Si cette option est désactivée, les groupes d’utilisateurs liés à la COPPA ne seront pas affichés.',
 	'MAX_CHARS'					=> 'max',
 	'MIN_CHARS'					=> 'min',
 	'NO_AUTH_PLUGIN'			=> 'Aucun module d’extension d’authentification n’a été trouvé.',
@@ -305,7 +289,6 @@ $lang = array_merge($lang, array(
 // Visual Confirmation Settings
 $lang = array_merge($lang, array(
 	'ACP_VC_SETTINGS_EXPLAIN'				=> 'Vous pouvez sélectionner et configurer sur cette page tous les modules d’extension qui permettent de lutter contre l’envoi de formulaires par des robots indésirables. Ces modules d’extension fonctionnent en général en demandant aux utilisateur de résoudre un <em>CAPTCHA</em>, qui est un outil permettant de différencier les humains aux robots.',
-	'ACP_VC_EXT_GET_MORE'					=> 'Vous pouvez obtenir des modules d’extension anti-spam supplémentaires (et probablement plus efficaces) en visitant la <a href="https://www.phpbb.com/go/anti-spam-ext"><strong>base de données des extensions de phpBB.com</strong></a> (en anglais). Pour plus d’informations concernant la prévention du spam sur votre forum, veuillez visiter la <a href="https://www.phpbb.com/go/anti-spam"><strong>base de connaissances de phpBB.com</strong></a> (en anglais).',
 	'AVAILABLE_CAPTCHAS'					=> 'Modules d’extension disponibles',
 	'CAPTCHA_UNAVAILABLE'					=> 'Le module d’extension ne peut pas être sélectionné tant que ses prérequis ne sont pas respectés.',
 	'CAPTCHA_GD'							=> 'Bruit GD de l’image',
@@ -314,9 +297,9 @@ $lang = array_merge($lang, array(
 	'CAPTCHA_GD_EXPLAIN'					=> 'Utilise la bibliothèque graphique GD afin de rendre l’image permettant de lutter contre les robots indésirables plus difficilement déchiffrable.',
 	'CAPTCHA_GD_FOREGROUND_NOISE_EXPLAIN'	=> 'Utilise un bruit de premier plan afin de rendre l’image plus difficilement déchiffrable.',
 	'CAPTCHA_GD_X_GRID'						=> 'Bruit de fond sur l’axe des abscisses',
-	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Utilisez ici des valeurs faibles afin de rendre l’image plus difficilement déchiffrable. Réglez cette valeur sur 0 afin de désactiver le bruit de fond sur l’axe des abscisses.',
+	'CAPTCHA_GD_X_GRID_EXPLAIN'				=> 'Utilisez ici des valeurs faibles afin de rendre l’image plus difficilement déchiffrable. Réglez cette valeur sur <samp>0</samp> afin de désactiver le bruit de fond sur l’axe des abscisses.',
 	'CAPTCHA_GD_Y_GRID'						=> 'Bruit de fond sur l’axe des ordonnées',
-	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Utilisez ici des valeurs faibles afin de rendre l’image plus difficilement déchiffrable. Réglez cette valeur sur 0 afin de désactiver le bruit de fond sur l’axe des ordonnées.',
+	'CAPTCHA_GD_Y_GRID_EXPLAIN'				=> 'Utilisez ici des valeurs faibles afin de rendre l’image plus difficilement déchiffrable. Réglez cette valeur sur <samp>0</samp> afin de désactiver le bruit de fond sur l’axe des ordonnées.',
 	'CAPTCHA_GD_WAVE'						=> 'Distorsion en forme de vagues',
 	'CAPTCHA_GD_WAVE_EXPLAIN'				=> 'Cela appliquera sur l’image une distorsion en forme de vagues.',
 	'CAPTCHA_GD_3D_NOISE'					=> 'Ajouter des objets de bruit en 3D',
@@ -360,40 +343,20 @@ $lang = array_merge($lang, array(
 	'SESSION_LENGTH_EXPLAIN'	=> 'Le nombre de secondes qui s’écouleront avant que les sessions expirent.',
 ));
 
-// Contact Settings
-$lang = array_merge($lang, array(
-	'ACP_CONTACT_SETTINGS_EXPLAIN'		=> 'Vous pouvez activer, modifier et désactiver sur cette page la page de contact.',
-
-	'CONTACT_US_ENABLE'				=> 'Activer la page de contact',
-	'CONTACT_US_ENABLE_EXPLAIN'		=> 'Cette page permet aux utilisateurs d’envoyer des courriers électroniques aux administrateurs du forum',
-
-	'CONTACT_US_INFO'				=> 'Informations de la page de contact',
-	'CONTACT_US_INFO_EXPLAIN'		=> 'Le message est affiché sur la page de contact',
-	'CONTACT_US_INFO_PREVIEW'		=> 'Informations de la page de contact - Prévisualisation',
-	'CONTACT_US_INFO_UPDATED'		=> 'Les informations de la page de contact ont été mises à jour.',
-));
-
 // Load Settings
 $lang = array_merge($lang, array(
 	'ACP_LOAD_SETTINGS_EXPLAIN'	=> 'Vous pouvez activer et désactiver sur cette page certaines fonctionnalités du forum qui pourront réduire la quantité de processus actifs. Sur la plupart des serveurs, il n’est pas nécessaire de désactiver ces fonctionnalités. Cependant, sur certains systèmes d’exploitation ou offres d’hébergement mutualisé, il est préférable de désactiver certaines fonctionnalités dont vous n’avez pas réellement besoin. Vous pouvez également limiter certains réglages relatifs à la charge du système et aux sessions actives qui désactiveront automatiquement votre forum si les valeurs sont dépassées.',
 
-	'ALLOW_CDN'						=> 'Autoriser l’utilisation de contenu hébergé sur des serveurs externes',
-	'ALLOW_CDN_EXPLAIN'				=> 'Si cette option est activée, certains fichiers seront distribués par des serveurs externes au lieu de votre serveur. Cette fonctionnalité réduira la bande passante de votre serveur mais peut poser des problèmes de confidentialité concernant les administrateurs soucieux de l’anonymat de leur forum. Dans une installation par défaut, la librairie « jQuery » et la police de caractères « Open Sans » seront distribués par le réseau de distribution de contenu de Google.',
-	'ALLOW_LIVE_SEARCHES'			=> 'Autoriser les prédictions de recherche',
-	'ALLOW_LIVE_SEARCHES_EXPLAIN'	=> 'Si cette option est activée, les utilisateurs bénéficieront de suggestions de mots-clés lors de la rédaction de texte dans certains champs du forum.',
 	'CUSTOM_PROFILE_FIELDS'			=> 'Champs de profil personnalisés',
 	'LIMIT_LOAD'					=> 'Limite de la charge du système',
 	'LIMIT_LOAD_EXPLAIN'			=> 'Si la charge du système dépasse cette valeur durant une minute, le forum sera automatiquement désactivé. Une valeur de 1.0 correspond à 100 % de l’utilisation des processus d’un processeur. Cette fonctionnalité ne fonctionne que sur les serveurs basés sous UNIX et dans lesquels ce réglage est accessible. Cette valeur se réinitialise sur 0 si phpBB n’arrive pas à charger la limite de la charge du système.',
 	'LIMIT_SESSIONS'				=> 'Limiter le nombre de sessions',
 	'LIMIT_SESSIONS_EXPLAIN'		=> 'Si le nombre de sessions dépasse cette valeur durant une minute, le forum sera automatiquement désactivé. Réglez cette valeur sur 0 si vous ne souhaitez pas limiter le nombre de sessions.',
 	'LOAD_CPF_MEMBERLIST'			=> 'Afficher les champs de profil personnalisés dans la liste des membres',
-	'LOAD_CPF_PM'					=> 'Afficher les champs de profil personnalisés dans les messages privés',
 	'LOAD_CPF_VIEWPROFILE'			=> 'Afficher les champs de profil personnalisés dans le profil des utilisateurs',
 	'LOAD_CPF_VIEWTOPIC'			=> 'Afficher les champs de profil personnalisés dans les pages de sujets',
 	'LOAD_USER_ACTIVITY'			=> 'Afficher l’activité des utilisateurs',
 	'LOAD_USER_ACTIVITY_EXPLAIN'	=> 'La liste des sujets et des forums sur lesquels les utilisateurs sont actifs sera affichée sur leur profil et sur le panneau de contrôle de l’utilisateur. Il est recommandé de désactiver cette fonctionnalité sur les forums comportant plus d’un million de messages.',
-	'READ_NOTIFICATION_EXPIRE_DAYS'	=> 'Délai d’expiration des notifications consultées',
-	'READ_NOTIFICATION_EXPIRE_DAYS_EXPLAIN' => 'Le nombre de jours qui s’écouleront avant que les notifications consultées soient supprimées. Réglez cette valeur sur 0 si vous ne souhaitez pas limiter la durée des notifications consultées.',
 	'RECOMPILE_STYLES'				=> 'Recompiler les composants obsolètes des styles',
 	'RECOMPILE_STYLES_EXPLAIN'		=> 'Les composants obsolètes des styles installés sur votre forum seront vérifiés, mis à jour et recompilés.',
 	'YES_ANON_READ_MARKING'			=> 'Activer l’indicateur de lecture des sujets pour les invités',
@@ -417,19 +380,12 @@ $lang = array_merge($lang, array(
 
 // Auth settings
 $lang = array_merge($lang, array(
-	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Les modules d’extension d’authentification vous permettent de déterminer la manière dont les utilisateurs s’authentifient lors de leur connexion au forum. Quatre modules sont fournis par défaut : la base de données (DB), LDAP, Apache et OAuth. Toutes les méthodes d’authentification ne nécessitent pas forcément d’informations complémentaires, ne remplissez que les champs utiles à la méthode que vous avez sélectionnée.',
+	'ACP_AUTH_SETTINGS_EXPLAIN'	=> 'Les modules d’extension d’authentification vous permettent de déterminer la manière dont les utilisateurs s’authentifient lors de leur connexion au forum. Trois modules sont fournis par défaut : la base de données (DB), LDAP et Apache. Toutes les méthodes d’authentification ne nécessitent pas forcément d’informations complémentaires, ne remplissez que les champs utiles à la méthode que vous avez sélectionnée.',
 
 	'AUTH_METHOD'				=> 'Sélectionner une méthode d’authentification',
 
-	'AUTH_PROVIDER_OAUTH_ERROR_ELEMENT_MISSING'	=> 'Vous devez renseigner la clé et le secret pour chaque fournisseur de service OAuth. Seule une de ces données a été renseignée dans le cas d’un fournisseur de service OAuth.',
-	'AUTH_PROVIDER_OAUTH_EXPLAIN'				=> 'Chaque fournisseur de service OAuth doit être renseigné par une clé et un secret unique afin de pouvoir se faire authentifier par le serveur externe. Ces données sont fournies par le service OAuth lors de l’inscription de votre site internet à leurs services et doivent être saisies telles quelles.<br />Chaque service qui n’est pas renseigné de ces deux données ne sera pas accessible aux utilisateurs du forum. Veuillez noter que les utilisateurs pourront toujours s’inscrire et se connecter en utilisant le module d’extension d’authentification de la base de données.',
-	'AUTH_PROVIDER_OAUTH_KEY'					=> 'Clé',
-	'AUTH_PROVIDER_OAUTH_TITLE'					=> 'OAuth',
-	'AUTH_PROVIDER_OAUTH_SECRET'				=> 'Secret',
-
 	'APACHE_SETUP_BEFORE_USE'	=> 'Vous devez configurer l’authentification par Apache avant de pouvoir faire fonctionner phpBB sous cette méthode d’authentification. Le nom d’utilisateur que vous utilisez afin de vous authentifier par Apache doit être identique à votre nom d’utilisateur sur le forum. L’authentification par Apache ne peut être utilisé que si mod_php (qui ne doit pas être avec une version CGI) et safe_mode sont désactivés.',
 
-	'LDAP'							=> 'LDAP',
 	'LDAP_DN'						=> 'Base LDAP vers <var>dn</var>',
 	'LDAP_DN_EXPLAIN'				=> 'Le nom absolu menant aux informations des utilisateurs, telles que <samp>o=MaCompagnie,c=FR</samp>.',
 	'LDAP_EMAIL'					=> 'Attribut LDAP des adresses de courrier électronique',
@@ -453,7 +409,7 @@ $lang = array_merge($lang, array(
 
 // Server Settings
 $lang = array_merge($lang, array(
-	'ACP_SERVER_SETTINGS_EXPLAIN'	=> 'Vous pouvez effectuer sur cette page les réglages relatifs au serveur et au domaine. Veuillez vous assurer de la validité des données présentes ci-dessous car vos courriers électroniques pourraient contenir des informations erronées si des données incorrectes étaient présentes. Lorsque vous saisissez le nom de domaine, n’oubliez pas d’inclure son protocole, tel que http://. Ne modifiez le port que si votre serveur fonctionne sous un port différent dont vous avez connaissance, mais sachez néanmoins que le port 80 est correct dans la plupart des cas.',
+	'ACP_SERVER_SETTINGS_EXPLAIN'	=> 'Vous pouvez effectuer sur cette page les réglages relatifs au serveur et au domaine. Veuillez vous assurer de la validité des données présentes ci-dessous car vos courriers électroniques pourraient contenir des informations erronées si des données incorrectes étaient présentes. Lorsque vous saisissez le nom de domaine, n’oubliez pas d’inclure son protocole, tel que <samp>http://</samp>. Ne modifiez le port que si votre serveur fonctionne sous un port différent dont vous avez connaissance, mais sachez néanmoins que le port 80 est correct dans la plupart des cas.',
 
 	'ENABLE_GZIP'				=> 'Activer la compression GZip',
 	'ENABLE_GZIP_EXPLAIN'		=> 'Le contenu généré sera compressé avant d’être envoyé aux utilisateurs. Cela peut réduire le trafic du réseau mais augmentera en contrepartie l’utilisation du processeur de votre serveur et de vos utilisateurs. L’extension zlib de PHP doit être chargée afin que la compression fonctionne.',
@@ -461,10 +417,6 @@ $lang = array_merge($lang, array(
 	'FORCE_SERVER_VARS_EXPLAIN'	=> 'Si cette option est activée, les réglages de la redirection du serveur spécifiés ci-dessous seront utilisés à la place des valeurs déterminées automatiquement.',
 	'ICONS_PATH'				=> 'Chemin vers le répertoire de stockage des icônes de message',
 	'ICONS_PATH_EXPLAIN'		=> 'Le chemin relatif à la racine du répertoire de votre forum, tel que <samp>images/icons</samp>.',
-	'MOD_REWRITE_ENABLE'		=> 'Activer la réécriture des liens',
-	'MOD_REWRITE_ENABLE_EXPLAIN' => 'Si cette option est activée, les liens contenant « app.php » seront réécrits afin de supprimer le nom du fichier (par exemple, « app.php/foo » deviendra « /foo »). <strong>Le module mod_rewrite du serveur Apache doit être activé afin que la réécriture fonctionne correctement. Si cette option est activée alors que mod_rewrite n’est pas activé, les liens de votre forum peuvent ne plus fonctionner.</strong>',
-	'MOD_REWRITE_DISABLED'		=> 'Le module <strong>mod_rewrite</strong> de votre serveur Apache est désactivé. Si vous souhaitez activer cette fonctionnalité, vous devez activer ce module ou demander à votre hébergeur internet de le faire.',
-	'MOD_REWRITE_INFORMATION_UNAVAILABLE' => 'Nous sommes dans l’incapacité à déterminer si votre serveur est compatible avec cette fonctionnalité. Vous pouvez essayer d’activer la réecriture des liens, mais si votre serveur n’est pas compatible avec cette dernière, les chemins générés par le forum peuvent ne plus fonctionner correctement. Veuillez contacter votre hébergeur internet afin de lui demander si vous pouvez activer en toute sécurité cette fonctionnalité.',
 	'PATH_SETTINGS'				=> 'Réglages du chemin',
 	'RANKS_PATH'				=> 'Chemin vers le répertoire de stockage des images de rangs',
 	'RANKS_PATH_EXPLAIN'		=> 'Le chemin relatif à la racine du répertoire de votre forum, tel que <samp>images/ranks</samp>.',
@@ -481,8 +433,6 @@ $lang = array_merge($lang, array(
 	'SMILIES_PATH_EXPLAIN'		=> 'Le chemin relatif à la racine du répertoire de votre forum, tel que <samp>images/smilies</samp>.',
 	'UPLOAD_ICONS_PATH'			=> 'Chemin vers le répertoire de stockage des icônes de groupes d’extensions',
 	'UPLOAD_ICONS_PATH_EXPLAIN'	=> 'Le chemin relatif à la racine du répertoire de votre forum, tel que <samp>images/upload_icons</samp>.',
-	'USE_SYSTEM_CRON'		=> 'Exécuter les tâches périodiques à partir du service cron',
-	'USE_SYSTEM_CRON_EXPLAIN'		=> 'Si cette option est désactivée, phpBB s’assurera que les tâches périodiques soient exécutées automatiquement. Si cette option est activée, phpBB ne planifiera aucune tâche périodique de lui-même. Un administrateur système devra alors s’assurer de faire exécuter <code>bin/phpbbcli.php cron:run</code> à des intervalles réguliers (toutes les 5 minutes par exemple) par le programme cron.',
 ));
 
 // Security Settings
@@ -492,8 +442,6 @@ $lang = array_merge($lang, array(
 	'ALL'							=> 'Tout',
 	'ALLOW_AUTOLOGIN'				=> 'Activer la fonctionnalité « Se souvenir de moi »',
 	'ALLOW_AUTOLOGIN_EXPLAIN'		=> 'Les utilisateurs pourront se connecter automatiquement lors de leurs visites sur le forum.',
-	'ALLOW_PASSWORD_RESET'			=> 'Autoriser la réinitialisation des mots de passe (« J’ai oublié mon mot de passe »)',
-	'ALLOW_PASSWORD_RESET_EXPLAIN'	=> 'Les utilisateurs pourront utiliser le lien « J’ai oublié mon mot de passe » situé sur la page de connexion afin de réinitialiser leur mot de passe et recommencer à se connecter sur le forum. Si vous utilisez un système d’authentification externe, vous devriez désactiver cette fonctionnalité.',
 	'AUTOLOGIN_LENGTH'				=> 'Délai d’expiration des clés de connexions automatiques',
 	'AUTOLOGIN_LENGTH_EXPLAIN'		=> 'Le nombre de jours qui s’écouleront avant que les clés de connexions automatiques soient supprimées. Réglez cette valeur sur 0 si vous ne souhaitez pas limiter la durée des clés de connexions automatiques.',
 	'BROWSER_VALID'					=> 'Valider les navigateurs internet',
@@ -532,8 +480,8 @@ $lang = array_merge($lang, array(
 	'PASS_TYPE_SYMBOL'				=> 'Doit contenir des symboles',
 	'REF_HOST'						=> 'Valider uniquement l’hôte',
 	'REF_PATH'						=> 'Valider également le chemin',
-	'REFERRER_VALID'				=> 'Valider le référant',
-	'REFERRER_VALID_EXPLAIN'		=> 'Si cette option est activée, le référant des requêtes POST sera vérifié et pourra servir à valider l’hôte et le chemin du forum. Si votre forum est accessibles sur plusieurs domaines ou utilise des connexions externes, vous ne devez pas autoriser le référant à valider le chemin afin d’éviter tout conflit.',
+	'REFERER_VALID'					=> 'Valider le référant',
+	'REFERER_VALID_EXPLAIN'			=> 'Si cette option est activée, le référant des requêtes <code>POST</code> sera vérifié à la place des réglages effectués sur le chemin de l’hôte ou sur le script. Cela peut s’avérer problématique concernant les forums utilisant plusieurs domaines ou connexions externes.',
 	'TPL_ALLOW_PHP'					=> 'Autoriser le code PHP dans les modèles',
 	'TPL_ALLOW_PHP_EXPLAIN'			=> 'Si cette option est activée, les instructions <code>PHP</code> et <code>INCLUDEPHP</code> seront reconnues et analysées dans les modèles.',
 ));
@@ -550,8 +498,6 @@ $lang = array_merge($lang, array(
 	'BOARD_HIDE_EMAILS_EXPLAIN'		=> 'Les adresses de courrier électronique peuvent être masquées afin qu’elles demeurent confidentielles.',
 	'CONTACT_EMAIL'					=> 'Adresse de courrier électronique de contact',
 	'CONTACT_EMAIL_EXPLAIN'			=> 'Cette adresse sera utilisée lorsqu’un contact particulier est nécessaire, comme en cas de message indésirable, d’erreur survenue, etc. Elle sera toujours utilisée comme l’adresse du chemin de l’envoi et considérée comme celle du destinataire dans les courriers électroniques.',
-	'CONTACT_EMAIL_NAME'			=> 'Nom du contact',
-	'CONTACT_EMAIL_NAME_EXPLAIN'	=> 'Le nom du contact qui s’affichera aux destinataires des courriers électroniques. Laissez ce champ vide si vous ne souhaitez pas afficher de nom de contact.',
 	'EMAIL_FUNCTION_NAME'			=> 'Nom de la fonction de la messagerie électronique',
 	'EMAIL_FUNCTION_NAME_EXPLAIN'	=> 'Le nom de la fonction PHP utilisée par la messagerie électronique afin d’envoyer des courriers électroniques.',
 	'EMAIL_PACKAGE_SIZE'			=> 'Nombre de courriers électroniques envoyés en une seule fois',
@@ -600,3 +546,5 @@ $lang = array_merge($lang, array(
 	'JAB_USERNAME'				=> 'Nom d’utilisateur Jabber ou JID',
 	'JAB_USERNAME_EXPLAIN'		=> 'Saisissez un nom d’utilisateur inscrit ou un JID correct. La validité de ce nom d’utilisateur ne sera cependant pas vérifiée. Si vous ne saisissez qu’un nom d’utilisateur, votre JID correspondra à votre nom d’utilisateur et au serveur que vous avez spécifié ci-dessous. Dans le cas contraire, veuillez saisir un JID correct, tel que utilisateur@jabber.org.',
 ));
+
+?>

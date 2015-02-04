@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_attachments [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -65,7 +62,6 @@ $lang = array_merge($lang, array(
 	'ATTACH_MAX_PM_FILESIZE_EXPLAIN'	=> 'La taille maximale des pièces jointes insérées dans les messages privés. Réglez cette valeur sur 0 si vous ne souhaitez pas limiter cette taille.',
 	'ATTACH_ORPHAN_URL'					=> 'Pièces jointes orphelines',
 	'ATTACH_POST_ID'					=> 'Identification du message',
-	'ATTACH_POST_TYPE'					=> 'Type de message',
 	'ATTACH_QUOTA'						=> 'Quota maximal des pièces jointes',
 	'ATTACH_QUOTA_EXPLAIN'				=> 'L’espace de stockage maximal alloué à la totalité des pièces jointes transférées sur le forum. Réglez cette valeur sur 0 si vous ne souhaitez pas limiter cet espace.',
 	'ATTACH_TO_POST'					=> 'Insérer au message',
@@ -111,9 +107,6 @@ $lang = array_merge($lang, array(
 	'EXT_GROUP_REAL_MEDIA'			=> 'RealMedia',
 	'EXT_GROUP_WINDOWS_MEDIA'		=> 'Windows Media',
 
-	'FILES_GONE'			=> 'Certaines des pièces jointes que vous souhaitez supprimer sont introuvables. Elles ont peut-être déjà été supprimées. Les pièces jointes trouvées ont été supprimées.',
-	'FILES_STATS_WRONG'		=> 'Les fichiers statistiques semblent contenir des informations erronées et doivent être resynchronisés. Les valeurs actuelles de ces derniers sont les suivantes : nombre de pièces jointes = %1$d, taille des pièces jointes = %2$s.<br />Veuillez cliquer %3$sici%4$s afin de synchroniser les fichiers statistiques.',
-
 	'GO_TO_EXTENSIONS'		=> 'Aller sur la page de gestion des extensions',
 	'GROUP_NAME'			=> 'Nom du groupe d’extensions',
 
@@ -137,7 +130,6 @@ $lang = array_merge($lang, array(
 	'NOT_ALLOWED_IN_PM'			=> 'Autorisé uniquement dans les messages',
 	'NOT_ALLOWED_IN_PM_POST'	=> 'Interdit',
 	'NOT_ASSIGNED'				=> 'Non assigné',
-	'NO_ATTACHMENTS'			=> 'Aucune pièce jointe.',
 	'NO_EXT_GROUP'				=> 'Aucun',
 	'NO_EXT_GROUP_NAME'			=> 'Aucun nom de groupe n’a été spécifié',
 	'NO_EXT_GROUP_SPECIFIED'	=> 'Aucun groupe d’extensions n’a été spécifié.',
@@ -151,9 +143,8 @@ $lang = array_merge($lang, array(
 	'ORDER_ALLOW_DENY'		=> 'Autoriser',
 	'ORDER_DENY_ALLOW'		=> 'Interdire',
 
-	'REMOVE_ALLOWED_IPS'			=> 'Supprimer ou lever l’exclusion des adresses IP ou des noms d’hôtes <em>autorisés</em>',
-	'REMOVE_DISALLOWED_IPS'			=> 'Supprimer ou lever l’exclusion des adresses IP ou des noms d’hôtes <em>interdits</em>',
-	'RESYNC_FILES_STATS_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir resynchroniser les fichiers statistiques ?',
+	'REMOVE_ALLOWED_IPS'		=> 'Supprimer ou lever l’exclusion des adresses IP ou des noms d’hôtes <em>autorisés</em>',
+	'REMOVE_DISALLOWED_IPS'		=> 'Supprimer ou lever l’exclusion des adresses IP ou des noms d’hôtes <em>interdits</em>',
 
 	'SEARCH_IMAGICK'				=> 'Rechercher ImageMagick',
 	'SECURE_ALLOW_DENY'				=> 'Comportement des téléchargements sécurisés',
@@ -179,3 +170,5 @@ $lang = array_merge($lang, array(
 	'UPLOAD_ICON'					=> 'Icône de transfert',
 	'UPLOAD_NOT_DIR'				=> 'Le répertoire de transfert que vous avez spécifié est incorrect.',
 ));
+
+?>

@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* posting [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -74,14 +71,6 @@ $lang = array_merge($lang, array(
 	'CANNOT_POST_ANNOUNCE'		=> 'Vous ne pouvez pas publier d’annonces.',
 	'CANNOT_POST_STICKY'		=> 'Vous ne pouvez pas publier de notes.',
 	'CHANGE_TOPIC_TO'			=> 'Type de sujet',
-	'CHARS_POST_CONTAINS'		=> array(
-		1	=> 'Votre message contient %1$d caractère.',
-		2	=> 'Votre message contient %1$d caractères.',
-	),
-	'CHARS_SIG_CONTAINS'		=> array(
-		1	=> 'Votre signature contient %1$d caractère.',
-		2	=> 'Votre signature contient %1$d caractères.',
-	),
 	'CLOSE_TAGS'				=> 'Fermer les balises',
 	'CURRENT_TOPIC'				=> 'Sujet actuel',
 
@@ -89,20 +78,8 @@ $lang = array_merge($lang, array(
 	'DELETE_MESSAGE'			=> 'Supprimer le message',
 	'DELETE_MESSAGE_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer ce message ?',
 	'DELETE_OWN_POSTS'			=> 'Vous ne pouvez supprimer que vos propres messages.',
-	'DELETE_PERMANENTLY'		=> 'Supprimer définitivement',
 	'DELETE_POST_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ce message ?',
-	'DELETE_POST_PERMANENTLY_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer <strong>définitivement</strong> ce message ?',
-	'DELETE_POST_PERMANENTLY'	=> 'Supprimer définitivement ce message (il ne pourra pas être restauré)',
-	'DELETE_POSTS_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ces messages ?',
-	'DELETE_POSTS_PERMANENTLY_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer <strong>définitivement</strong> ces messages ?',
-	'DELETE_REASON'				=> 'Raison de la suppression',
-	'DELETE_REASON_EXPLAIN'		=> 'La raison de la suppression sera affichée aux modérateurs.',
-	'DELETE_POST_WARN'			=> 'Supprimer ce message',
-	'DELETE_TOPIC_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ce sujet ?',
-	'DELETE_TOPIC_PERMANENTLY'	=> 'Supprime définitivement ce sujet qui ne pourra pas être restauré',
-	'DELETE_TOPIC_PERMANENTLY_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer <strong>définitivement</strong> ce sujet ?',
-	'DELETE_TOPICS_CONFIRM'		=> 'Êtes-vous sûr(e) de vouloir supprimer ces sujets ?',
-	'DELETE_TOPICS_PERMANENTLY_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir supprimer <strong>définitivement</strong> ces sujets ?',
+	'DELETE_POST_WARN'			=> 'Une fois supprimé, le message ne pourra pas être restauré',
 	'DISABLE_BBCODE'			=> 'Désactiver le BBCode',
 	'DISABLE_MAGIC_URL'			=> 'Ne pas analyser automatiquement la syntaxe des liens',
 	'DISABLE_SMILIES'			=> 'Désactiver les émoticônes',
@@ -146,28 +123,12 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_REPLY'		=> 'Vous devez vous connecter afin de pouvoir répondre aux sujets de ce forum.',
 
 	'MAX_FONT_SIZE_EXCEEDED'	=> 'Vous ne devez utiliser que les polices de caractères dont la taille est inférieure à %1$d.',
-	'MAX_FLASH_HEIGHT_EXCEEDED'	=> array(
-		1	=> 'Vos fichiers Flash ne doivent pas dépasser %d pixel de haut.',
-		2	=> 'Vos fichiers Flash ne doivent pas dépasser %d pixels de haut.',
-	),
-	'MAX_FLASH_WIDTH_EXCEEDED'	=> array(
-		1	=> 'Vos fichiers Flash ne doivent pas dépasser %d pixel de large.',
-		2	=> 'Vos fichiers Flash ne doivent pas dépasser %d pixels de large.',
-	),
-	'MAX_IMG_HEIGHT_EXCEEDED'	=> array(
-		1	=> 'Vos images ne doivent pas dépasser %1$d pixel de haut.',
-		2	=> 'Vos images ne doivent pas dépasser %1$d pixels de haut.',
-	),
-	'MAX_IMG_WIDTH_EXCEEDED'	=> array(
-		1	=> 'Vos images ne doivent pas dépasser %d pixel de large.',
-		2	=> 'Vos images ne doivent pas dépasser %d pixels de large.',
-	),
+	'MAX_FLASH_HEIGHT_EXCEEDED'	=> 'Vos fichiers Flash ne doivent pas dépasser %1$d pixels de haut.',
+	'MAX_FLASH_WIDTH_EXCEEDED'	=> 'Vos fichiers Flash ne doivent pas dépasser %1$d pixels de large.',
+	'MAX_IMG_HEIGHT_EXCEEDED'	=> 'Vos images ne doivent pas dépasser %1$d pixels de haut.',
+	'MAX_IMG_WIDTH_EXCEEDED'	=> 'Vos images ne doivent pas dépasser %1$d pixels de large.',
 
-	'MESSAGE_BODY_EXPLAIN'		=> array(
-		0	=> '', // zero means no limit, so we don't view a message here.
-		1	=> 'Saisissez votre message ici. Il ne doit contenir que <strong>%d</strong> caractère au maximum.',
-		2	=> 'Saisissez votre message ici. Il ne doit contenir que <strong>%d</strong> caractères au maximum.',
-	),
+	'MESSAGE_BODY_EXPLAIN'		=> 'Saisissez votre message ici. Il ne doit contenir que <strong>%d</strong> caractères au maximum.',
 	'MESSAGE_DELETED'			=> 'Le message a été supprimé.',
 	'MORE_SMILIES'				=> 'Accéder à davantage d’émoticônes',
 
@@ -189,14 +150,8 @@ $lang = array_merge($lang, array(
 	'POLL_MAX_OPTIONS'			=> 'Options par utilisateur',
 	'POLL_MAX_OPTIONS_EXPLAIN'	=> 'Cette valeur correspond au nombre d’options que les utilisateurs peuvent sélectionner lors de leur vote.',
 	'POLL_OPTIONS'				=> 'Options du sondage',
-	'POLL_OPTIONS_EXPLAIN'		=> array(
-		1	=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir <strong>%d</strong> option.',
-		2	=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir jusqu’à <strong>%d</strong> options.',
-	),
-	'POLL_OPTIONS_EDIT_EXPLAIN'		=> array(
-		1	=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir <strong>%d</strong> option. Si vous supprimez ou ajoutez une ou plusieurs options, tous les votes effectués seront réinitialisés.',
-		2	=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir jusqu’à <strong>%d</strong> options. Si vous supprimez ou ajoutez une ou plusieurs options, tous les votes effectués seront réinitialisés.',
-	),
+	'POLL_OPTIONS_EXPLAIN'		=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir jusqu’à <strong>%d</strong> options.',
+	'POLL_OPTIONS_EDIT_EXPLAIN'	=> 'Insérez chaque option sur une nouvelle ligne. Vous pouvez saisir jusqu’à <strong>%d</strong> options. Si vous supprimez ou ajoutez une ou plusieurs options, tous les votes effectués seront réinitialisés.',
 	'POLL_QUESTION'				=> 'Question du sondage',
 	'POLL_TITLE_TOO_LONG'		=> 'Le titre du sondage ne doit pas dépasser 100 caractères.',
 	'POLL_TITLE_COMP_TOO_LONG'	=> 'La taille du titre de votre sondage est trop importante. Sachez que les BBCodes ou les émoticônes se sont pas pris en compte et qu’ils devraient par conséquent être supprimés.',
@@ -221,13 +176,9 @@ $lang = array_merge($lang, array(
 	'POST_TOPIC_AS'				=> 'Format du sujet',
 	'PROGRESS_BAR'				=> 'Barre de progression',
 
-	'QUOTE_DEPTH_EXCEEDED'		=> array(
-		1	=> 'Vous ne pouvez insérer que %d citation imbriquée.',
-		2	=> 'Vous ne pouvez insérer que %d citations imbriquées.',
-	),
-	'QUOTE_NO_NESTING'			=> 'Vous ne pouvez pas insérer de citations imbriquées.',
+	'QUOTE_DEPTH_EXCEEDED'		=> 'Vous ne pouvez insérer que %1$d citations imbriquées.',
 
-	'REMOTE_UPLOAD_TIMEOUT'		=> 'Le fichier que vous avez spécifié n’a pu être transféré car la requête a expiré.',
+	'REMOTE_UPLOAD_TIMEOUT'		=> 'Le fichier que vous avez spécifié n’a pas pu être transféré car la requête a expiré.',
 	'SAVE'						=> 'Enregistrer',
 	'SAVE_DATE'					=> 'Enregistré le',
 	'SAVE_DRAFT'				=> 'Enregistrer comme brouillon',
@@ -241,17 +192,12 @@ $lang = array_merge($lang, array(
 	'STYLES_TIP'				=> 'Astuce : les mises en forme peuvent rapidement être appliquées en sélectionnant le texte.',
 
 	'TOO_FEW_CHARS'				=> 'Votre message ne contient pas assez de caractères.',
-	'TOO_FEW_CHARS_LIMIT'		=> array(
-		1	=> 'Vous devez saisir au moins %1$d caractère.',
-		2	=> 'Vous devez saisir au moins %1$d caractères.',
-	),
+	'TOO_FEW_CHARS_LIMIT'		=> 'Votre message contient %1$d caractères. Vous devez saisir au moins %2$d caractères.',
 	'TOO_FEW_POLL_OPTIONS'		=> 'Vous devez saisir au moins deux options afin de créer le sondage.',
 	'TOO_MANY_ATTACHMENTS'		=> 'Impossible de transférer une nouvelle pièce jointe, la limite maximale est de %d.',
 	'TOO_MANY_CHARS'			=> 'Votre message contient trop de caractères.',
-	'TOO_MANY_CHARS_LIMIT'		=> array(
-		1	=> 'Le nombre maximal de caractères autorisés est de %1$d.',
-		2	=> 'Le nombre maximal de caractères autorisés est de %1$d.',
-	),
+	'TOO_MANY_CHARS_POST'		=> 'Votre message contient %1$d caractères. Le nombre maximal de caractères autorisés est de %2$d.',
+	'TOO_MANY_CHARS_SIG'		=> 'Votre signature contient %1$d caractères. Le nombre maximal de caractères autorisés est de %2$d.',
 	'TOO_MANY_POLL_OPTIONS'		=> 'Vous avez essayé de voter pour un trop grand nombre d’options.',
 	'TOO_MANY_SMILIES'			=> 'Votre message contient trop d’émoticônes. Le nombre maximal d’émoticônes autorisées est de %d.',
 	'TOO_MANY_URLS'				=> 'Votre message contient trop de liens. Le nombre maximal de liens autorisés est de %d.',
@@ -260,8 +206,6 @@ $lang = array_merge($lang, array(
 
 	'UNAUTHORISED_BBCODE'		=> 'Vous ne pouvez pas utiliser certains BBCodes : %s.',
 	'UNGLOBALISE_EXPLAIN'		=> 'Pour rétablir cette annonce générale en sujet standard, vous devez sélectionner le forum dans lequel vous souhaitez que ce sujet soit affiché.',
-	'UNSUPPORTED_CHARACTERS_MESSAGE'	=> 'Votre message contient les caractères non supportés suivants :<br />%s',
-	'UNSUPPORTED_CHARACTERS_SUBJECT'	=> 'Votre sujet contient les caractères non supportés suivants :<br />%s',
 	'UPDATE_COMMENT'			=> 'Mettre à jour la description',
 	'URL_INVALID'				=> 'Le lien que vous avez spécifié est incorrect.',
 	'URL_NOT_FOUND'				=> 'Le fichier que vous avez spécifié est introuvable.',
@@ -277,5 +221,7 @@ $lang = array_merge($lang, array(
 	'VIEW_PRIVATE_MESSAGE'		=> '%sConsulter le message privé que vous avez envoyé%s',
 
 	'WRONG_FILESIZE'			=> 'Le fichier est trop lourd, la taille maximale autorisée est de %1$d %2$s.',
-	'WRONG_SIZE'				=> 'La taille de l’image doit mesurer moins de %1$s de large et %2$s de haut et plus de %3$s de large et %4$s de haut. L’image que vous avez envoyée mesure %5$s de large et %6$s de haut.',
+	'WRONG_SIZE'				=> 'La taille de l’image doit mesurer moins de %1$d pixels de large et %2$d pixels de haut et plus de %3$d pixels de large et %4$d pixels de haut. L’image que vous avez envoyée mesure %5$d pixels de large et %6$d pixels de haut.',
 ));
+
+?>

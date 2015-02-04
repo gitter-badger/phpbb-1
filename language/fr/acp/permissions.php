@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_permissions [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -56,7 +53,7 @@ $lang = array_merge($lang, array(
 
 		<br />
 
-		<p>Pour plus d’informations concernant le réglage des permissions sur votre forum, veuillez consulter la section sur le <a href="https://www.phpbb.com/support/docs/en/3.1/ug/quickstart/permissions/">réglage des permissions de notre guide de démarrage rapide</a> (en anglais).</p>
+		<p>Pour plus d’informations concernant le réglage des permissions sur votre forum, veuillez consulter le <a href="https://www.phpbb.com/support/documentation/3.0/quickstart/quick_permissions.html">chapitre 1.5 de notre guide de démarrage rapide</a> (en anglais).</p>
 	',
 
 	'ACL_NEVER'				=> 'Jamais',
@@ -186,6 +183,7 @@ $lang = array_merge($lang, array(
 	'ROLE_USER_STANDARD'		=> 'Fonctionnalités standards',
 	'ROLE_USER_NEW_MEMBER'		=> 'Fonctionnalités des utilisateurs inscrits récemment',
 
+
 	'ROLE_DESCRIPTION_ADMIN_FORUM'			=> 'Peut accéder à la gestion du forum et aux réglages de ses permissions.',
 	'ROLE_DESCRIPTION_ADMIN_FULL'			=> 'Peut accéder à toutes les fonctionnalités des administrateurs.<br />Il n’est pas recommandé d’attribuer ce rôle.',
 	'ROLE_DESCRIPTION_ADMIN_STANDARD'		=> 'Peut accéder à la plupart des fonctionnalités des administrateurs mais ne peut pas modifier les options relatives au système et au serveur.',
@@ -287,3 +285,5 @@ $lang = array_merge($lang, array(
 	'WRONG_PERMISSION_TYPE'				=> 'Le type de permission que vous avez spécifié est incorrect.',
 	'WRONG_PERMISSION_SETTING_FORMAT'	=> 'Les réglages des permissions sont enregistrées dans un mauvais format, phpBB est incapable de les traiter correctement.',
 ));
+
+?>

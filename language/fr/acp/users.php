@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_users [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -143,3 +140,5 @@ $lang = array_merge($lang, array(
 	'USER_WARNING_LOG_DELETED'		=> 'Aucune information n’est disponible. Il est possible que l’historique d’entrée ait été supprimé.',
 	'USER_TOOLS'					=> 'Outils basiques',
 ));
+
+?>

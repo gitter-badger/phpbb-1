@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_profile [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -41,11 +38,8 @@ if (empty($lang) || !is_array($lang))
 // Custom profile fields
 $lang = array_merge($lang, array(
 	'ADDED_PROFILE_FIELD'	=> 'Le champ de profil personnalisé a été ajouté.',
-	'ALPHA_DOTS'			=> 'Lettres (sans accent), chiffres et points',
 	'ALPHA_ONLY'			=> 'Lettres (sans accent) et chiffres uniquement',
 	'ALPHA_SPACERS'			=> 'Lettres (sans accent), chiffres et séparateurs',
-	'ALPHA_UNDERSCORE'		=> 'Lettres (sans accent), chiffres et tirets bas',
-	'ALPHA_PUNCTUATION'		=> 'Lettres (sans accent), chiffres, virgules, points, tirets bas et tirets commençant par une lettre',
 	'ALWAYS_TODAY'			=> 'Toujours la date actuelle',
 
 	'BOOL_ENTRIES_EXPLAIN'	=> 'Saisissez à présent vos options',
@@ -72,10 +66,6 @@ $lang = array_merge($lang, array(
 	'DISPLAY_AT_PROFILE_EXPLAIN'	=> 'L’utilisateur pourra modifier ce champ de profil depuis le panneau de contrôle de l’utilisateur.',
 	'DISPLAY_AT_REGISTER'			=> 'Afficher lors de l’inscription',
 	'DISPLAY_AT_REGISTER_EXPLAIN'	=> 'Si cette option est activée, le champ sera affiché lors de l’inscription.',
-	'DISPLAY_ON_MEMBERLIST'			=> 'Afficher sur la page de la liste des membres',
-	'DISPLAY_ON_MEMBERLIST_EXPLAIN'	=> 'Si cette option est activée, le champ sera affiché dans la colonne des utilisateurs sur la page de la liste des membres.',
-	'DISPLAY_ON_PM'					=> 'Afficher sur la page de consultation des messages privés',
-	'DISPLAY_ON_PM_EXPLAIN'			=> 'Si cette option est activée, le champ sera affiché dans le profil miniature de la page des messages privés.',
 	'DISPLAY_ON_VT'					=> 'Afficher sur la page de la liste des sujets',
 	'DISPLAY_ON_VT_EXPLAIN'			=> 'Si cette option est activée, le champ sera affiché dans le profil miniature de la page de la liste des sujets.',
 	'DISPLAY_PROFILE_FIELD'			=> 'Afficher publiquement le champ de profil',
@@ -89,26 +79,20 @@ $lang = array_merge($lang, array(
 	'EVERYTHING_OK'					=> 'Tout est correct',
 
 	'FIELD_BOOL'				=> 'Booléen (oui/non)',
-	'FIELD_CONTACT_DESC'		=> 'Description du contact',
-	'FIELD_CONTACT_URL'			=> 'Lien du contact',
 	'FIELD_DATE'				=> 'Date',
 	'FIELD_DESCRIPTION'			=> 'Description du champ',
 	'FIELD_DESCRIPTION_EXPLAIN'	=> 'La description de ce champ est affiché aux utilisateurs.',
 	'FIELD_DROPDOWN'			=> 'Liste déroulante',
-	'FIELD_GOOGLEPLUS'			=> 'Google+',
 	'FIELD_IDENT'				=> 'Identification du champ',
 	'FIELD_IDENT_ALREADY_EXIST'	=> 'Cette identification de champ existe déjà. Veuillez en saisir une autre.',
 	'FIELD_IDENT_EXPLAIN'		=> 'L’identification du champ correspond au nom qui permet d’identifier le champ de profil dans la base de données et les modèles.',
 	'FIELD_INT'					=> 'Chiffres',
-	'FIELD_IS_CONTACT'			=> 'Afficher le champ comme un champ de contact',
-	'FIELD_IS_CONTACT_EXPLAIN'	=> 'Les champs de contact sont affichés dans la section de contact sur le profil des utilisateurs et sont affichés différemment dans le profil miniature situé à côté des messages et des messages privés. Vous pouvez utiliser <samp>%s</samp> comme une variable de marque substitutive qui sera remplacée par la valeur que les utilisateurs auront saisi.',
 	'FIELD_LENGTH'				=> 'Largeur de la boîte de saisie',
 	'FIELD_NOT_FOUND'			=> 'Le champ de profil est introuvable.',
 	'FIELD_STRING'				=> 'Champ de texte simple',
 	'FIELD_TEXT'				=> 'Zone de texte',
 	'FIELD_TYPE'				=> 'Type de champ',
 	'FIELD_TYPE_EXPLAIN'		=> 'Le type de champ ne pourra pas être modifié ultérieurement.',
-	'FIELD_URL'					=> 'Lien',
 	'FIELD_VALIDATION'			=> 'Validation du champ',
 	'FIRST_OPTION'				=> 'Première option',
 
@@ -120,12 +104,6 @@ $lang = array_merge($lang, array(
 	'ISO_LANGUAGE'				=> 'Langue [%s]',
 
 	'LANG_SPECIFIC_OPTIONS'		=> 'Options spécifiques à la langue [<strong>%s</strong>]',
-
-	'LETTER_NUM_DOTS'			=> 'Tout chiffre et point',
-	'LETTER_NUM_ONLY'			=> 'Tout chiffre et lettre',
-	'LETTER_NUM_PUNCTUATION'	=> 'Tout chiffre, lettre, virgule, point, tiret bas et tiret commençant avec une lettre',
-	'LETTER_NUM_SPACERS'		=> 'Tout chiffre, lettre et espace',
-	'LETTER_NUM_UNDERSCORE'		=> 'Tout chiffre, lettre et tiret bas',
 
 	'MAX_FIELD_CHARS'		=> 'Nombre maximal de caractères',
 	'MAX_FIELD_NUMBER'		=> 'Nombre le plus élevé autorisé',
@@ -176,3 +154,5 @@ $lang = array_merge($lang, array(
 
 	'VISIBILITY_OPTION'				=> 'Options de visibilité',
 ));
+
+?>

@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* help_bbcode [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -39,7 +36,7 @@ $help = array(
 	),
 	array(
 		0 => 'Qu’est-ce que le BBCode ?',
-		1 => 'Le BBCode est une implémentation spéciale du code HTML. Vous pouvez utiliser le BBCode dans vos messages sur le forum sous réserve que cette fonctionnalité ait été autorisée par un administrateur. De plus, vous pouvez désactiver le BBCode sur chacun de vos messages depuis le formulaire de rédaction. Le BBCode est similaire à l’architecture du code HTML, les balises sont contenues entre des crochets [ et ] à la place de &lt; et &gt;, et il offre un meilleur contrôle sur la mise en forme. Selon le style que vous utilisez, vous pouvez trouver et utiliser très facilement du BBCode dans vos messages depuis une interface cliquable située juste au-dessus du formulaire de rédaction. Si ces brèves explications ne vous conviennent pas, vous pouvez consulter le guide suivant qui s’avère très explicite.'
+		1 => 'Le BBCode est une implémentation spéciale du code HTML. Vous pouvez utiliser le BBCode dans vos messages sur le forum sous réserve que cette fonctionnalité ait été autorisée par un administrateur. De plus, vous pouvez désactiver le BBCode sur chacun de vos messages depuis le formulaire de rédaction. Le BBCode est similaire à l’architecture du code HTML, les balises sont contenues entre des crochets [ et ] à la place de &lt; et &gt;, et il offre un meilleur contrôle sur la mise en forme. Selon le modèle que vous utilisez, vous pouvez trouver et utiliser très facilement du BBCode dans vos messages depuis une interface cliquable située juste au-dessus du formulaire de rédaction. Si ces brèves explications ne vous conviennent pas, vous pouvez consulter le guide suivant qui s’avère très explicite.'
 	),
 	array(
 		0 => '--',
@@ -115,3 +112,5 @@ $help = array(
 		1 => 'Si vous êtes un administrateur de ce forum et que vous en avez les permissions appropriées, vous pouvez ajouter davantage de BBCodes dans la section « Personnaliser les BBCodes ».'
 	),
 );
+
+?>

@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_groups [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -40,7 +37,6 @@ if (empty($lang) || !is_array($lang))
 
 $lang = array_merge($lang, array(
 	'ACP_GROUPS_MANAGE_EXPLAIN'		=> 'Vous pouvez administrer sur cette page tous les groupes d’utilisateurs de votre forum. Vous pouvez créer, éditer et supprimer des groupes d’utilisateurs, sélectionner leur statut (libre, restreint ou invisible) et saisir leur nom et leur description. De plus, vous pouvez nommer les responsables des différents groupes d’utilisateurs.',
-	'ADD_GROUP_CATEGORY'			=> 'Ajouter une catégorie',
 	'ADD_USERS'						=> 'Ajouter des utilisateurs',
 	'ADD_USERS_EXPLAIN'				=> 'Vous pouvez ajouter ici de nouveaux utilisateurs à un groupe d’utilisateurs. Vous pouvez également attribuer un groupe d’utilisateurs par défaut aux utilisateurs que vous avez sélectionnés. De plus, vous pouvez promouvoir certains membres d’un groupe d’utilisateurs comme responsables de ce dernier. Veuillez saisir chaque nom d’utilisateur sur une nouvelle ligne.',
 
@@ -55,14 +51,11 @@ $lang = array_merge($lang, array(
 	'GROUP_APPROVED'				=> 'Membres approuvés',
 	'GROUP_AVATAR'					=> 'Avatar du groupe',
 	'GROUP_AVATAR_EXPLAIN'			=> 'Cette image sera affichée dans le panneau de contrôle des groupes d’utilisateurs.',
-	'GROUP_CATEGORY_NAME'			=> 'Nom de la catégorie',
 	'GROUP_CLOSED'					=> 'Restreint',
 	'GROUP_COLOR'					=> 'Couleur du groupe',
 	'GROUP_COLOR_EXPLAIN'			=> 'La couleur dans laquelle les noms d’utilisateurs des membres du groupe apparaîtront. Laissez ce champ vide si vous souhaitez conserver la couleur des membres par défaut.',
-	'GROUP_CONFIRM_ADD_USERS'		=> array(
-		1	=> 'Êtes-vous sûr(e) de vouloir ajouter l’utilisateur %2$s au groupe d’utilisateurs ?',
-		2	=> 'Êtes-vous sûr(e) de vouloir ajouter les utilisateurs %2$s au groupe d’utilisateurs ?',
-	),
+	'GROUP_CONFIRM_ADD_USER'		=> 'Êtes-vous sûr(e) de vouloir ajouter l’utilisateur %1$s au groupe d’utilisateurs ?',
+	'GROUP_CONFIRM_ADD_USERS'		=> 'Êtes-vous sûr(e) de vouloir ajouter les utilisateurs %1$s au groupe d’utilisateurs ?',
 	'GROUP_CREATED'					=> 'Le groupe d’utilisateurs a été créé.',
 	'GROUP_DEFAULT'					=> 'Définir comme groupe d’utilisateurs par défaut pour les membres',
 	'GROUP_DEFS_UPDATED'			=> 'Le groupe d’utilisateurs a été réglé comme groupe d’utilisateurs par défaut pour tous les membres sélectionnés.',
@@ -104,8 +97,6 @@ $lang = array_merge($lang, array(
 	'GROUP_SETTINGS_SAVE'			=> 'Réglages généraux du groupe',
 	'GROUP_SKIP_AUTH'				=> 'Exempter le responsable des permissions du groupe',
 	'GROUP_SKIP_AUTH_EXPLAIN'		=> 'Si cette option est activée, le responsable du groupe d’utilisateurs n’héritera pas des permissions de ce dernier.',
-	'GROUP_SPECIAL'					=> 'Prédéfini',
-	'GROUP_TEAMPAGE'				=> 'Afficher le groupe sur la page de l’équipe',
 	'GROUP_TYPE'					=> 'Type de groupe',
 	'GROUP_TYPE_EXPLAIN'			=> 'Détermine quels sont les utilisateurs qui peuvent rejoindre ou consulter ce groupe.',
 	'GROUP_UPDATED'					=> 'Les préférences du groupe ont été mises à jour.',
@@ -114,37 +105,19 @@ $lang = array_merge($lang, array(
 	'GROUP_USERS_EXIST'				=> 'Les utilisateurs que vous avez sélectionnés sont déjà des membres de ce groupe d’utilisateurs.',
 	'GROUP_USERS_REMOVE'			=> 'Les utilisateurs ont été supprimés de ce groupe d’utilisateurs. Ils ont été transférés dans le groupe d’utilisateurs par défaut.',
 
-	'LEGEND_EXPLAIN'				=> 'Cette liste correspond aux groupes d’utilisateurs qui sont affichés dans la légende des groupes :',
-	'LEGEND_SETTINGS'				=> 'Réglages de la légende',
-	'LEGEND_SORT_GROUPNAME'			=> 'Trier la légende par le nom des groupes',
-	'LEGEND_SORT_GROUPNAME_EXPLAIN'	=> 'Si cette option est activée, la position des groupes d’utilisateurs qui est affiché ci-dessous sera ignorée.',
-
-	'MANAGE_LEGEND'			=> 'Gérer la légende des groupes',
-	'MANAGE_TEAMPAGE'		=> 'Gérer la page de l’équipe',
 	'MAKE_DEFAULT_FOR_ALL'	=> 'Définir comme le groupe par défaut pour tous les membres',
 	'MEMBERS'				=> 'Membres',
 
 	'NO_GROUP'					=> 'Aucun groupe n’a été spécifié.',
-	'NO_GROUPS_ADDED'			=> 'Aucun groupe n’a été ajouté.',
 	'NO_GROUPS_CREATED'			=> 'Aucun groupe n’a été crée.',
 	'NO_PERMISSIONS'			=> 'Ne copier aucune permission',
 	'NO_USERS'					=> 'Aucun utilisateur n’a été spécifié.',
 	'NO_USERS_ADDED'			=> 'Aucun utilisateur n’a été ajouté au groupe d’utilisateurs.',
 	'NO_VALID_USERS'			=> 'Aucun utilisateur ne peut réaliser cette opération.',
 
-	'SELECT_GROUP'				=> 'Sélectionner un groupe',
 	'SPECIAL_GROUPS'			=> 'Groupes prédéfinis',
 	'SPECIAL_GROUPS_EXPLAIN'	=> 'Les groupes prédéfinis sont des groupes spéciaux. Ils ne peuvent ni être supprimés, ni être directement modifiés. Cependant, vous pouvez gérer leurs membres et éditer certains de leurs réglages.',
 
-	'TEAMPAGE'					=> 'Page de l’équipe',
-	'TEAMPAGE_DISP_ALL'			=> 'Toutes les adhésions',
-	'TEAMPAGE_DISP_DEFAULT'		=> 'Adhésions par défaut',
-	'TEAMPAGE_DISP_FIRST'		=> 'Premières adhésions',
-	'TEAMPAGE_EXPLAIN'			=> 'Cette liste correspond aux groupes d’utilisateurs qui sont affichés dans la page de l’équipe :',
-	'TEAMPAGE_FORUMS'			=> 'Afficher les forums modérés',
-	'TEAMPAGE_FORUMS_EXPLAIN'	=> 'Si cette option est activée, les modérateurs pourront consulter dans leur ligne la liste de tous les forums où ils détiennent des permissions de modérateur. Veuillez noter que cette option peut provoquer des communications intensives avec la base de données dans le cas des forums populaires.',
-	'TEAMPAGE_MEMBERSHIPS'		=> 'Méthode d’affichage des adhésions des utilisateurs',
-	'TEAMPAGE_SETTINGS'			=> 'Réglages de la page de l’équipe',
 	'TOTAL_MEMBERS'				=> 'Membres',
 
 	'USERS_APPROVED'				=> 'Les utilisateurs ont été approuvés.',
@@ -155,3 +128,5 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEFAULT_EXPLAIN'	=> 'Si cette option est activée, ce groupe d’utilisateurs sera considéré comme le groupe d’utilisateurs par défaut de tous les utilisateurs.',
 	'USER_GROUP_LEADER'				=> 'Promouvoir en responsable du groupe',
 ));
+
+?>

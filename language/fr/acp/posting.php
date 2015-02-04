@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_posting [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -49,7 +46,6 @@ $lang = array_merge($lang, array(
 
 	'BBCODE_ADDED'				=> 'Le BBCode a été ajouté.',
 	'BBCODE_EDITED'				=> 'Le BBCode a été édité.',
-	'BBCODE_DELETED'			=> 'Le BBCode a été supprimé.',
 	'BBCODE_NOT_EXIST'			=> 'Le BBCode que vous avez spécifié n’existe pas.',
 	'BBCODE_HELPLINE'			=> 'Ligne d’aide',
 	'BBCODE_HELPLINE_EXPLAIN'	=> 'Vous pouvez saisir dans ce champ le texte qui sera affiché lors du passage de la souris sur le bouton du BBCode.',
@@ -113,6 +109,8 @@ $lang = array_merge($lang, array(
 	'DISPLAY_POSTING'			=> 'Sur la page de rédaction',
 	'DISPLAY_POSTING_NO'		=> 'Pas sur la page de rédaction',
 
+
+
 	'EDIT_ICONS'				=> 'Éditer les icônes',
 	'EDIT_SMILIES'				=> 'Éditer les émoticônes',
 	'EMOTION'					=> 'Émotion',
@@ -124,19 +122,15 @@ $lang = array_merge($lang, array(
 	'FIRST'			=> 'Premier',
 
 	'ICONS_ADD'				=> 'Ajouter une nouvelle icône',
-	'ICONS_ADDED'			=> array(
-		0	=> 'Aucune icône n’a été ajoutée.',
-		1	=> 'L’icône a été ajoutée.',
-		2	=> 'Les icônes ont été ajoutées.',
-	),
+	'ICONS_NONE_ADDED'		=> 'Aucune icône n’a été ajoutée.',
+	'ICONS_ONE_ADDED'		=> 'L’icône a été ajoutée.',
+	'ICONS_ADDED'			=> 'Les icônes ont été ajoutées.',
 	'ICONS_CONFIG'			=> 'Configuration de l’icône',
 	'ICONS_DELETED'			=> 'L’icône a été supprimée.',
 	'ICONS_EDIT'			=> 'Éditer l’icône',
-	'ICONS_EDITED'			=> array(
-		0	=> 'Aucune icône n’a été mise à jour.',
-		1	=> 'L’icône a été mise à jour.',
-		2	=> 'Les icônes ont été mises à jour.',
-	),
+	'ICONS_ONE_EDITED'		=> 'L’icône a été mise à jour.',
+	'ICONS_NONE_EDITED'		=> 'Aucune icône n’a été mise à jour.',
+	'ICONS_EDITED'			=> 'Les icônes ont été mises à jour.',
 	'ICONS_HEIGHT'			=> 'Hauteur de l’icône',
 	'ICONS_IMAGE'			=> 'Image de l’icône',
 	'ICONS_IMPORTED'		=> 'L’archive d’icônes a été installée.',
@@ -168,11 +162,9 @@ $lang = array_merge($lang, array(
 
 	'SELECT_PACKAGE'			=> 'Sélectionner une archive',
 	'SMILIES_ADD'				=> 'Ajouter une nouvelle émoticône',
-	'SMILIES_ADDED'				=> array(
-		0	=> 'Aucune émoticône n’a été ajoutée.',
-		1	=> 'L’émoticône a été ajoutée.',
-		2	=> 'Les émoticônes ont été ajoutées.',
-	),
+	'SMILIES_NONE_ADDED'		=> 'Aucune émoticône n’a été ajoutée.',
+	'SMILIES_ONE_ADDED'			=> 'L’émoticône a été ajoutée.',
+	'SMILIES_ADDED'				=> 'Les émoticônes ont été ajoutées.',
 	'SMILIES_CODE'				=> 'Code de l’émoticône',
 	'SMILIES_CONFIG'			=> 'Configuration de l’émoticône',
 	'SMILIES_DELETED'			=> 'L’émoticône a été supprimée.',
@@ -180,11 +172,9 @@ $lang = array_merge($lang, array(
 	'SMILIE_NO_CODE'			=> 'L’émoticône « %s » a été ignorée car aucun code n’a été spécifié.',
 	'SMILIE_NO_EMOTION'			=> 'L’émoticône « %s » a été ignorée car aucune émoticône n’a été spécifiée.',
 	'SMILIE_NO_FILE'			=> 'L’émoticône « %s » a été ignorée car le fichier est manquant.',
-	'SMILIES_EDITED'			=> array(
-		0	=> 'Aucune émoticône n’a été mise à jour.',
-		1	=> 'L’émoticône a été mise à jour.',
-		2	=> 'Les émoticônes ont été mises à jour.',
-	),
+	'SMILIES_NONE_EDITED'		=> 'Aucune émoticône n’a été mise à jour.',
+	'SMILIES_ONE_EDITED'		=> 'L’émoticône a été mise à jour.',
+	'SMILIES_EDITED'			=> 'Les émoticônes ont été mises à jour.',
 	'SMILIES_EMOTION'			=> 'Émotion',
 	'SMILIES_HEIGHT'			=> 'Hauteur de l’émoticône',
 	'SMILIES_IMAGE'				=> 'Image de l’émoticône',
@@ -196,10 +186,7 @@ $lang = array_merge($lang, array(
 	'SMILIES_URL'				=> 'Image de l’émoticône',
 	'SMILIES_WIDTH'				=> 'Largeur de l’émoticône',
 
-	'TOO_MANY_SMILIES'			=> array(
-		1	=> 'La limite de %d émoticône a été atteinte.',
-		2	=> 'La limite de %d émoticônes a été atteinte.',
-	),
+	'TOO_MANY_SMILIES'			=> 'La limite de %d émoticônes a été atteinte.',
 
 	'WRONG_PAK_TYPE'	=> 'L’archive que vous avez sélectionnée ne contient pas les données appropriées.',
 ));
@@ -291,3 +278,5 @@ $lang = array_merge($lang, array(
 
 	'USED_IN_REPORTS'		=> 'Nombre d’utilisation',
 ));
+
+?>

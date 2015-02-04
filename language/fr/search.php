@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* search [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -44,14 +41,9 @@ $lang = array_merge($lang, array(
 
 	'DISPLAY_RESULTS'		=> 'Afficher les résultats sous forme de',
 
-	'FOUND_SEARCH_MATCHES'		=> array(
-		1	=> 'La recherche a retourné %d résultat',
-		2	=> 'La recherche a retourné %d résultats',
-	),
-	'FOUND_MORE_SEARCH_MATCHES'		=> array(
-		1	=> 'La recherche a retourné plus de %d résultat',
-		2	=> 'La recherche a retourné plus de %d résultats',
-	),
+	'FOUND_SEARCH_MATCH'		=> 'La recherche a retourné %d résultat',
+	'FOUND_SEARCH_MATCHES'		=> 'La recherche a retourné %d résultats',
+	'FOUND_MORE_SEARCH_MATCHES'	=> 'La recherche a retourné plus de %d résultats',
 
 	'GLOBAL'				=> 'Annonce générale',
 
@@ -64,32 +56,24 @@ $lang = array_merge($lang, array(
 	'LOGIN_EXPLAIN_UNREADSEARCH'=> 'Vous devez vous inscrire et vous connecter afin de consulter vos messages non lus.',
 	'LOGIN_EXPLAIN_NEWPOSTS'	=> 'Vous devez vous inscrire et vous connecter afin de consulter les nouveaux messages qui ont été publiés depuis votre dernière visite.',
 
-	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> array(
-		1	=> 'Vous avez spécifié un trop grand nombre de mots à rechercher. Veuillez ne pas saisir plus de %1$d mot.',
-		2	=> 'Vous avez spécifié un trop grand nombre de mots à rechercher. Veuillez ne pas saisir plus de %1$d mots.',
-	),
+	'MAX_NUM_SEARCH_KEYWORDS_REFINE'	=> 'Vous avez spécifié un trop grand nombre de mots à rechercher. Veuillez ne pas saisir plus de %1$d mots.',
 
-	'NO_KEYWORDS'			=> 'Vous devez saisir au moins un mot afin d’effectuer une recherche. Chaque mot doit être composé d’au moins %s caractères et ne doit pas en contenir plus de %s, en excluant les jokers.',
+	'NO_KEYWORDS'			=> 'Vous devez saisir au moins un mot afin d’effectuer une recherche. Chaque mot doit être composé d’au moins %d caractères et ne doit pas en contenir plus de %d, en excluant les jokers.',
 	'NO_RECENT_SEARCHES'	=> 'Aucune recherche n’a été effectuée récemment.',
 	'NO_SEARCH'				=> 'Vous ne pouvez pas effectuer de recherche.',
 	'NO_SEARCH_RESULTS'		=> 'Aucun résultat ne correspond aux termes que vous avez spécifiés.',
-	'NO_SEARCH_LOAD'		=> 'Vous ne pouvez pas effectuer de recherche pour le moment. Le serveur est en surcharge. Veuillez réessayer ultérieurement.',
-	'NO_SEARCH_TIME'		=> array(
-		1	=> 'Vous ne pouvez pas effectuer de recherche pour le moment. Veuillez réessayer dans %d seconde.',
-		2	=> 'Vous ne pouvez pas effectuer de recherche pour le moment. Veuillez réessayer dans %d secondes.',
-	),
+	'NO_SEARCH_TIME'		=> 'Vous ne pouvez pas effectuer de recherche pour le moment. Veuillez réessayer ultérieurement.',
 	'NO_SEARCH_UNREADS'		=> 'Le système de recherche des messages non lus a été désactivé sur ce forum.',
 	'WORD_IN_NO_POST'		=> 'Le mot <strong>%s</strong> n’est présent dans aucun message.',
 	'WORDS_IN_NO_POST'		=> 'Les mots <strong>%s</strong> ne sont présents dans aucun message.',
 
 	'POST_CHARACTERS'		=> 'caractères des messages',
-	'PHRASE_SEARCH_DISABLED'	=> 'La recherche de phrases exactes n’est pas supportée par ce forum.',
 
 	'RECENT_SEARCHES'		=> 'Recherches récentes',
 	'RESULT_DAYS'			=> 'Limiter les résultats selon leur ancienneté',
 	'RESULT_SORT'			=> 'Trier les résultats par',
 	'RETURN_FIRST'			=> 'Afficher seulement les premiers',
-	'GO_TO_SEARCH_ADV'	=> 'Aller sur la recherche avancée',
+	'RETURN_TO_SEARCH_ADV'	=> 'Revenir sur la recherche avancée',
 
 	'SEARCHED_FOR'				=> 'Rechercher les termes utilisés',
 	'SEARCHED_TOPIC'			=> 'Sujet recherché',
@@ -116,11 +100,8 @@ $lang = array_merge($lang, array(
 	'SORT_FORUM'				=> 'Forum',
 	'SORT_POST_SUBJECT'			=> 'Sujet du message',
 	'SORT_TIME'					=> 'Heure du message',
-	'SPHINX_SEARCH_FAILED'		=> 'La recherche a échoué : %s',
-	'SPHINX_SEARCH_FAILED_LOG'	=> 'Impossible d’effectuer la recherche. Pour plus d’informations à propos de ce dysfonctionnement, veuillez consulter l’historique des erreurs.',
 
-	'TOO_FEW_AUTHOR_CHARS'	=> array(
-		1	=> 'Vous devez saisir au moins %d caractère du nom des auteurs.',
-		2	=> 'Vous devez saisir au moins %d caractères du nom des auteurs.',
-	),
+	'TOO_FEW_AUTHOR_CHARS'	=> 'Vous devez saisir au moins %d caractères du nom des auteurs.',
 ));
+
+?>

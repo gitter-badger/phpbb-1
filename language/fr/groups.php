@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* groups [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -95,3 +92,5 @@ $lang = array_merge($lang, array(
 	'USER_GROUP_DEMOTE_CONFIRM'	=> 'Êtes-vous sûr(e) de vouloir abandonner votre statut de responsable du groupe que vous avez sélectionné ?',
 	'USER_GROUP_DEMOTED'		=> 'Vous n’êtes à présent plus responsable du groupe que vous avez sélectionné.',
 ));
+
+?>

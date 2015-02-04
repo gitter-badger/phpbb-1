@@ -1,15 +1,12 @@
 <?php
 /**
 *
-* This file is part of the French Language Package for the
-* phpBB Forum Software.
+* acp_forums [French]
 *
-* @copyright (c) phpBB Limited <https://www.phpbb.com>
-* @copyright (c) Maël Soucaze <https://www.maelsoucaze.com>
-* @license GNU General Public License, version 2 (GPL-2.0)
-*
-* For information about the language package, please see the
-* AUTHORS, LICENSE ans VERSION files.
+* @package language
+* @version $Id$
+* @copyright (c) 2005 phpBB Group, (c) Maël Soucaze
+* @license http://opensource.org/licenses/gpl-license.php GNU Public License
 *
 */
 
@@ -46,10 +43,6 @@ $lang = array_merge($lang, array(
 	'AUTO_PRUNE_FREQ_EXPLAIN'	=> 'Le nombre de jours qui s’écouleront entre les délestages automatiques.',
 	'AUTO_PRUNE_VIEWED'			=> 'Intervalle du délestage automatique des sujets impopulaires',
 	'AUTO_PRUNE_VIEWED_EXPLAIN'	=> 'Le nombre de jours qui s’écouleront entre la dernière consultation d’un sujet et la suppression du sujet.',
-	'AUTO_PRUNE_SHADOW_FREQ'	=> 'Fréquence du délestage automatique des redirections de sujet',
-	'AUTO_PRUNE_SHADOW_DAYS'	=> 'Intervalle du délestage automatique des redirections de sujet',
-	'AUTO_PRUNE_SHADOW_DAYS_EXPLAIN'	=> 'Le nombre de jours qui s’écouleront entre la dernière visite d’une redirection de sujet et la suppression de la redirection de sujet.',
-	'AUTO_PRUNE_SHADOW_FREQ_EXPLAIN'	=> 'Le nombre de jours qui s’écouleront entre les délestages automatiques.',
 
 	'CONTINUE'						=> 'Continuer',
 	'COPY_PERMISSIONS'				=> 'Copier les permissions',
@@ -79,7 +72,7 @@ $lang = array_merge($lang, array(
 	'ENABLE_TOPIC_ICONS'			=> 'Activer les icônes de sujet',
 
 	'FORUM_ADMIN'						=> 'Administration du forum',
-	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB 3.1, tout est basé sur la notion de forum. Ainsi, même les catégories ne sont plus qu’un type de forum. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez spécifier s’ils peuvent contenir ou non des messages (comme c’était le cas avec les anciennes catégories). Vous pouvez, de manière individuelle, ajouter, éditer, supprimer, verrouiller ou déverrouiller sur cette page les forums et régler certaines permissions additionnelles. Si certains messages et sujets ne sont plus synchronisés, vous pouvez également exécuter une resynchronisation. <strong>Si vous souhaitez que les forums que vous créez soient visibles publiquement, n’oubliez pas de copier ou de régler les permissions de chaque nouveau forum.</strong>',
+	'FORUM_ADMIN_EXPLAIN'				=> 'Dans phpBB 3.0, tout est basé sur la notion de forum. Ainsi, même les catégories ne sont plus qu’un type de forum. Chaque forum peut contenir un nombre illimité de sous-forums et vous pouvez spécifier s’ils peuvent contenir ou non des messages (comme c’était le cas avec les anciennes catégories). Vous pouvez, de manière individuelle, ajouter, éditer, supprimer, verrouiller ou déverrouiller sur cette page les forums et régler certaines permissions additionnelles. Si certains messages et sujets ne sont plus synchronisés, vous pouvez également exécuter une resynchronisation. <strong>Si vous souhaitez que les forums que vous créez soient visibles publiquement, n’oubliez pas de copier ou de régler les permissions de chaque nouveau forum.</strong>',
 	'FORUM_AUTO_PRUNE'					=> 'Activer le délestage automatique',
 	'FORUM_AUTO_PRUNE_EXPLAIN'			=> 'Si cette option est activée, les sujets de ce forum seront délestés selon les réglages de la fréquence et des intervalles du délestage automatique spécifiés ci-dessous.',
 	'FORUM_CREATED'						=> 'Le forum a été créé.',
@@ -109,8 +102,6 @@ $lang = array_merge($lang, array(
 	'FORUM_PASSWORD_OLD'				=> 'Le mot de passe du forum utilise une méthode de hachage obsolète qu’il est préférable de modifier.',
 	'FORUM_PASSWORD_MISMATCH'			=> 'Les mots de passe que vous avez saisis ne concordent pas.',
 	'FORUM_PRUNE_SETTINGS'				=> 'Réglages du délestage de forum',
-	'FORUM_PRUNE_SHADOW'				=> 'Activer le délestage automatique des redirections de sujet',
-	'FORUM_PRUNE_SHADOW_EXPLAIN'			=> 'Les redirections de sujet seront supprimées du forum. Réglez ci-dessous les paramètres de fréquence et d’ancienneté.',
 	'FORUM_RESYNCED'					=> 'Le forum « %s » a été resynchronisé',
 	'FORUM_RULES_EXPLAIN'				=> 'Les règles du forum sont affichées sur toutes les pages de ce forum.',
 	'FORUM_RULES_LINK'					=> 'Lien vers les règles du forum',
@@ -165,3 +156,5 @@ $lang = array_merge($lang, array(
 
 	'UNLOCKED'			=> 'Déverrouillé',
 ));
+
+?>
