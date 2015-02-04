@@ -1,6 +1,6 @@
 French Language Package
 =======================
-[![Build Status](https://travis-ci.org/maelsoucaze/phpbb.svg)](https://travis-ci.org/maelsoucaze/phpbb)
+[![Build Status](https://travis-ci.org/maelsoucaze/phpbb.svg?branch=olympus)](https://travis-ci.org/maelsoucaze/phpbb)
 
 Welcome to the official French language package for the phpBB® 3.0 forum software.
 
