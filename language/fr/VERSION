@@ -1,6 +1,6 @@
 LANGUAGE PACKAGE
 ----------------
-1.13.2 (Build 141)
+1.14.0-dev (Build 142)
 
 RELEASE DATE
 ------------
@@ -8,5 +8,5 @@ February 7, 2015
 
 FORUM SOFTWARE
 --------------
-phpBB 3.0.13-PL1
-https://download.phpbb.com/pub/release/3.0/3.0.13-PL1/
+phpBB 3.0.14-dev (Build 661)
+https://bamboo.phpbb.com/browse/PHPBB3-OLYMPUS-661/artifact/PACKAGE/Release-Files/
