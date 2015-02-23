@@ -5,7 +5,7 @@ php:
 
 env:
   global:
-    - PHPBB_TAG="develop-olympus"
+    - PHPBB_TAG="3.0.x"
     - PHPBB_VERSION="3.0"
     - PHPBB_LANGUAGE="fr"
 
