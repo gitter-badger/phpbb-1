@@ -8,8 +8,8 @@ Version
 
 [![Build Status] (https://travis-ci.org/maelsoucaze/phpbb.svg?branch=olympus)](https://travis-ci.org/maelsoucaze/phpbb)
 
-- 1.15.0-dev (Build 151)
-- Released on July 5, 2015
+- 1.15.0-dev (Build 152)
+- Released on August 12, 2015
 - Compatible with [phpBB 3.0.15-dev (Build 674)] (https://bamboo.phpbb.com/browse/PHPBB3-OLYMPUS-674)
 
 License
