@@ -10,7 +10,7 @@ Language package to localise the phpBB "Olympus" 3.0 forum software into French.
 
 ### Version
 
-- 1.15.0-dev (Build 153)
+- 1.15.0-dev (Build 154)
 - Released on September 2, 2015
 
 ### Compatibility
